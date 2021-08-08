@@ -1,0 +1,303 @@
+
+<html>
+  <head>
+    <style>
+      .normalText
+      {
+        color:green;
+	    background-color:black;
+      }
+      .reverseText
+      {
+        color:black;
+	    background-color:green;
+      }
+    </style>
+  </head>
+  <body style="background-color:black;font-family:'Courier New'">
+<span class="normalText"><span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sheet:&nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">PROFILE&nbsp;GRAPH<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">HARMONIC&nbsp;amplitude&nbsp;profiles<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">DURATION&nbsp;profile<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">ENERGY&nbsp;profile<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">DELETE&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">ZERO&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">WAVE&nbsp;TABLE&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">COMPUTE&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">INTERP&nbsp;switch<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">SCALE&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">JOIN/PLOT&nbsp;selector<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">LOOP&nbsp;control<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">CLEAR&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">RESET&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">VOICE&nbsp;selection<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">LOADING/SAVING&nbsp;files<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">WAVEFORM&nbsp;memory<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.&nbsp;&nbsp;&nbsp;&nbsp;<span><span class="reverseText">MODE&nbsp;of&nbsp;a&nbsp;voice<span><br>
+<span class="normalText"><span><br>For&nbsp;HELP&nbsp;&nbsp;touch&nbsp;any&nbsp;BOX&nbsp;with&nbsp;LIGHTPEN&nbsp;or&nbsp;TYPE:&nbsp;n&lt;set&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;n&nbsp;=&nbsp;sheet&nbsp;no.<span><br>
+<span class="normalText">&nbsp;For&nbsp;HELP&nbsp;with&nbsp;HELP&nbsp;PAGES&nbsp;,&nbsp;touch&nbsp;<span><span class="reverseText">THIS&nbsp;or&nbsp;TYPE:&nbsp;H1&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;THE&nbsp;PROFILE&nbsp;GRAPH&nbsp;&nbsp;allows&nbsp;changing&nbsp;parameters&nbsp;to&nbsp;be&nbsp;specified<span><br>
+<span class="normalText">&nbsp;with&nbsp;the&nbsp;LIGHTPEN&nbsp;as&nbsp;PROFILES.&nbsp;The&nbsp;vertical&nbsp;scale&nbsp;represents<span><br>
+<span class="normalText">&nbsp;AMPLITUDE&nbsp;(log);&nbsp;the&nbsp;horizontal&nbsp;represents&nbsp;TIME&nbsp;as&nbsp;<span><span class="reverseText">WAVEFORM<span><br>
+<span class="normalText">&nbsp;SEGMENTS.&nbsp;<span><span class="reverseText">HARMONIC&nbsp;AMPLITUDE&nbsp;profiles&nbsp;provide&nbsp;control&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;relative&nbsp;&nbsp;amplitudes&nbsp;of&nbsp;32&nbsp;harmonics.&nbsp;These&nbsp;are&nbsp;mathematically<span><br>
+<span class="normalText">&nbsp;processed&nbsp;by&nbsp;the&nbsp;COMPUTE&nbsp;command&nbsp;to&nbsp;yield&nbsp;the&nbsp;implied&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;by&nbsp;the&nbsp;principle&nbsp;of&nbsp;ADDITIVE&nbsp;synthesis.&nbsp;Any&nbsp;loaded&nbsp;<span><span class="reverseText">VOICE&nbsp;may&nbsp;be<span><br>
+<span class="normalText">&nbsp;chosen&nbsp;for&nbsp;display&nbsp;or&nbsp;modification.&nbsp;The&nbsp;setup&nbsp;of&nbsp;the&nbsp;graph&nbsp;is<span><br>
+<span class="normalText">&nbsp;preserved&nbsp;separately&nbsp;for&nbsp;each&nbsp;voice&nbsp;and&nbsp;is&nbsp;<span><span class="reverseText">SAVED/LOADED&nbsp;as&nbsp;part<span><br>
+<span class="normalText">&nbsp;of&nbsp;VOICE&nbsp;files.&nbsp;The&nbsp;<span><span class="reverseText">MODE&nbsp;of&nbsp;the&nbsp;selected&nbsp;voice&nbsp;determines&nbsp;some<span><br>
+<span class="normalText">&nbsp;important&nbsp;aspects&nbsp;of&nbsp;the&nbsp;profile&nbsp;graph&nbsp;and&nbsp;PAGE&nbsp;4&nbsp;in&nbsp;general.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;When&nbsp;voice&nbsp;is&nbsp;in&nbsp;MODE&nbsp;1&nbsp;&nbsp;-<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each&nbsp;horizontal&nbsp;division&nbsp;represents&nbsp;&nbsp;1&nbsp;&nbsp;waveform&nbsp;segment.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There&nbsp;are&nbsp;32&nbsp;waveform&nbsp;segments&nbsp;-&nbsp;32&nbsp;points&nbsp;per&nbsp;profile.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;<span><span class="reverseText">DURATION&nbsp;profile&nbsp;sets&nbsp;time-duration&nbsp;of&nbsp;each&nbsp;segment.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;<span><span class="reverseText">ENERGY&nbsp;profile&nbsp;controls&nbsp;voice&nbsp;amplitude&nbsp;envelope.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;<span><span class="reverseText">SCALE&nbsp;command&nbsp;is&nbsp;provided.<span><br>
+<span class="normalText">&nbsp;&nbsp;When&nbsp;voice&nbsp;is&nbsp;in&nbsp;MODE&nbsp;4&nbsp;&nbsp;-<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each&nbsp;horizontal&nbsp;division&nbsp;represents&nbsp;&nbsp;4&nbsp;&nbsp;waveform&nbsp;segments.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There&nbsp;are&nbsp;128&nbsp;waveform&nbsp;segments&nbsp;-&nbsp;128&nbsp;points&nbsp;per&nbsp;profile.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration&nbsp;of&nbsp;each&nbsp;segment&nbsp;is&nbsp;one&nbsp;cycle.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;MODE&nbsp;4&nbsp;ATTACK&nbsp;parameter&nbsp;is&nbsp;provided&nbsp;on&nbsp;PAGE&nbsp;7.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(See&nbsp;PAGES&nbsp;7&nbsp;&amp;&nbsp;6&nbsp;HELP&nbsp;for&nbsp;amplitude&nbsp;control&nbsp;in&nbsp;MODE&nbsp;4.)<span><br>
+<span class="normalText">&nbsp;&nbsp;THE&nbsp;HARMONIC&nbsp;AMPLITUDE&nbsp;PROFILES&nbsp;&nbsp;are&nbsp;represented&nbsp;by&nbsp;the&nbsp;numbers<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;1-32&nbsp;displayed&nbsp;across&nbsp;the&nbsp;screen.&nbsp;These&nbsp;numbers&nbsp;are&nbsp;lightpen<span><br>
+<span class="normalText">&nbsp;switches&nbsp;to&nbsp;display&nbsp;each&nbsp;profile.&nbsp;If&nbsp;desired,&nbsp;all&nbsp;32&nbsp;profiles<span><br>
+<span class="normalText">&nbsp;may&nbsp;be&nbsp;displayed&nbsp;on&nbsp;the&nbsp;graph&nbsp;simultaneously&nbsp;for&nbsp;viewing;<span><br>
+<span class="normalText">&nbsp;however,&nbsp;more&nbsp;than&nbsp;about&nbsp;10&nbsp;at&nbsp;once&nbsp;usually&nbsp;looks&nbsp;confusing<span><br>
+<span class="normalText">&nbsp;and&nbsp;can&nbsp;make&nbsp;the&nbsp;lightpen&nbsp;response&nbsp;sluggish.&nbsp;This&nbsp;means&nbsp;that<span><br>
+<span class="normalText">&nbsp;it&nbsp;is&nbsp;possible&nbsp;for&nbsp;profiles&nbsp;to&nbsp;be&nbsp;un-displayed&nbsp;and&nbsp;yet&nbsp;still<span><br>
+<span class="normalText">&nbsp;remain&nbsp;ACTIVE&nbsp;(contributing&nbsp;to&nbsp;the&nbsp;sound).&nbsp;For&nbsp;this&nbsp;reason,<span><br>
+<span class="normalText">&nbsp;two&nbsp;INDICATOR&nbsp;lights&nbsp;(blank&nbsp;if&nbsp;off)&nbsp;are&nbsp;located&nbsp;under&nbsp;each<span><br>
+<span class="normalText">&nbsp;harmonic&nbsp;number&nbsp;to&nbsp;show&nbsp;the&nbsp;status&nbsp;of&nbsp;that&nbsp;profile.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(triangle)&nbsp;:&nbsp;display&nbsp;indicator&nbsp;-&nbsp;profile&nbsp;is&nbsp;now&nbsp;displayed.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(cross)&nbsp;:&nbsp;active&nbsp;indicator&nbsp;-&nbsp;profile&nbsp;has&nbsp;NON-ZERO&nbsp;value.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;DISPLAY/OPEN&nbsp;a&nbsp;HARMONIC&nbsp;PROFILE&nbsp;&nbsp;touch&nbsp;the&nbsp;desired&nbsp;number&nbsp;wit<span><br>
+<span class="normalText">h<span><br>
+<span class="normalText">&nbsp;the&nbsp;LIGHTPEN.&nbsp;The&nbsp;profile&nbsp;will&nbsp;be&nbsp;DISPLAYED&nbsp;(if&nbsp;not&nbsp;already)<span><br>
+<span class="normalText">&nbsp;and&nbsp;OPENED&nbsp;for&nbsp;modification&nbsp;with&nbsp;the&nbsp;LIGHTPEN.&nbsp;A&nbsp;BOX&nbsp;around<span><br>
+<span class="normalText">&nbsp;the&nbsp;harmonic&nbsp;number&nbsp;and&nbsp;a&nbsp;DOUBLE&nbsp;LINE&nbsp;on&nbsp;the&nbsp;profile&nbsp;graph<span><br>
+<span class="normalText">&nbsp;identify&nbsp;the&nbsp;open&nbsp;profile.&nbsp;The&nbsp;lightpen&nbsp;may&nbsp;now&nbsp;be&nbsp;used&nbsp;to<span><br>
+<span class="normalText">&nbsp;modify&nbsp;the&nbsp;profile&nbsp;on&nbsp;the&nbsp;graph.&nbsp;See&nbsp;<span><span class="reverseText">JOIN/PLOT.&nbsp;Only&nbsp;one<span><br>
+<span class="normalText">&nbsp;profile&nbsp;can&nbsp;be&nbsp;open&nbsp;at&nbsp;a&nbsp;time.&nbsp;Opening&nbsp;a&nbsp;new&nbsp;profile&nbsp;leaves<span><br>
+<span class="normalText">&nbsp;the&nbsp;previous&nbsp;one&nbsp;displayed.&nbsp;When&nbsp;harmonic&nbsp;profiles&nbsp;are&nbsp;altered<span><br>
+<span class="normalText">&nbsp;&nbsp;no&nbsp;change&nbsp;&nbsp;will&nbsp;be&nbsp;heard&nbsp;in&nbsp;the&nbsp;voice&nbsp;until&nbsp;the&nbsp;<span><span class="reverseText">COMPUTE&nbsp;command<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;is&nbsp;given&nbsp;to&nbsp;translate&nbsp;the&nbsp;specified&nbsp;harmonic&nbsp;content&nbsp;into<span><br>
+<span class="normalText">&nbsp;waveform.&nbsp;When&nbsp;OPEN&nbsp;the&nbsp;profile&nbsp;may&nbsp;be&nbsp;<span><span class="reverseText">DELETED&nbsp;or&nbsp;<span><span class="reverseText">ZEROED.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;DISPLAY/SELECT&nbsp;a&nbsp;BLOCK&nbsp;of&nbsp;8&nbsp;HARMONIC&nbsp;profiles&nbsp;&nbsp;touch&nbsp;one&nbsp;of<span><br>
+<span class="normalText">&nbsp;the&nbsp;BLOCK&nbsp;SELECTOR&nbsp;boxes&nbsp;centred&nbsp;under&nbsp;each&nbsp;group&nbsp;of&nbsp;8&nbsp;harmonic<span><br>
+<span class="normalText">&nbsp;numbers.&nbsp;This&nbsp;will&nbsp;DISPLAY&nbsp;the&nbsp;8&nbsp;profiles&nbsp;on&nbsp;the&nbsp;graph.&nbsp;They<span><br>
+<span class="normalText">&nbsp;are&nbsp;also&nbsp;now&nbsp;SELECTED&nbsp;for&nbsp;possible&nbsp;use&nbsp;of&nbsp;the&nbsp;DELETE&nbsp;or&nbsp;ZERO<span><br>
+<span class="normalText">&nbsp;commands,&nbsp;which&nbsp;will&nbsp;act&nbsp;on&nbsp;ALL&nbsp;eight.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;THE&nbsp;ENERGY&nbsp;PROFILE&nbsp;&nbsp;defines&nbsp;the&nbsp;overall&nbsp;amplitude&nbsp;envelope&nbsp;of<span><br>
+<span class="normalText">&nbsp;the&nbsp;voice&nbsp;when&nbsp;in&nbsp;MODE&nbsp;1&nbsp;and&nbsp;MODE&nbsp;4.&nbsp;The&nbsp;energy&nbsp;profile&nbsp;is<span><br>
+<span class="normalText">&nbsp;generated&nbsp;automatically&nbsp;by&nbsp;the&nbsp;<span><span class="reverseText">COMPUTE&nbsp;command&nbsp;in&nbsp;MODE&nbsp;1&nbsp;&nbsp;and&nbsp;<span><span class="reverseText">OP<span><br>
+<span class="normalText">ENED&nbsp;and&nbsp;modified&nbsp;with&nbsp;the&nbsp;lightpen.&nbsp;In&nbsp;MODE&nbsp;4,<span><br>
+<span class="normalText">ENERGY&nbsp;will&nbsp;only&nbsp;be&nbsp;invoked&nbsp;if&nbsp;followed&nbsp;by&nbsp;SCALE&nbsp;command<span><br>
+<span class="normalText">&nbsp;See&nbsp;also&nbsp;<span><span class="reverseText">SCALE&nbsp;and&nbsp;<span><span class="reverseText">LOOP.<span><br>
+<span class="normalText">&nbsp;The&nbsp;DURATION&nbsp;PROFILE&nbsp;&nbsp;sets&nbsp;the&nbsp;duration&nbsp;of&nbsp;each&nbsp;WAVEFORM&nbsp;SEGMENT<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;in&nbsp;MODE&nbsp;1.&nbsp;It&nbsp;can&nbsp;be&nbsp;<span><span class="reverseText">OPENED&nbsp;and&nbsp;modified&nbsp;with&nbsp;the&nbsp;lightpen.<span><br>
+<span class="normalText">&nbsp;The&nbsp;default&nbsp;value&nbsp;is&nbsp;approx&nbsp;50&nbsp;msec&nbsp;per&nbsp;segment&nbsp;(condition<span><br>
+<span class="normalText">&nbsp;after&nbsp;the&nbsp;<span><span class="reverseText">CREATE&nbsp;or&nbsp;<span><span class="reverseText">RESET&nbsp;commands).&nbsp;When&nbsp;the&nbsp;voice&nbsp;is&nbsp;played<span><br>
+<span class="normalText">&nbsp;each&nbsp;segment&nbsp;is&nbsp;repeated&nbsp;for&nbsp;a&nbsp;number&nbsp;of&nbsp;cycles&nbsp;determined&nbsp;by<span><br>
+<span class="normalText">&nbsp;the&nbsp;combination&nbsp;of&nbsp;the&nbsp;duration&nbsp;profile&nbsp;and&nbsp;the&nbsp;pitch&nbsp;being<span><br>
+<span class="normalText">&nbsp;produced.&nbsp;This&nbsp;maintains&nbsp;a&nbsp;fairly&nbsp;constant&nbsp;net&nbsp;event&nbsp;length&nbsp;for<span><br>
+<span class="normalText">&nbsp;any&nbsp;pitch.&nbsp;If&nbsp;the&nbsp;duration&nbsp;profile&nbsp;is&nbsp;ZEROED&nbsp;a&nbsp;special&nbsp;case&nbsp;is<span><br>
+<span class="normalText">&nbsp;created&nbsp;where&nbsp;each&nbsp;segment&nbsp;is&nbsp;only&nbsp;played&nbsp;once&nbsp;regardless&nbsp;of<span><br>
+<span class="normalText">&nbsp;pitch;&nbsp;resembling&nbsp;MODE&nbsp;4.&nbsp;This&nbsp;can&nbsp;be&nbsp;useful&nbsp;in&nbsp;converting<span><br>
+<span class="normalText">&nbsp;externally&nbsp;sampled&nbsp;voices&nbsp;that&nbsp;are&nbsp;non-pitched&nbsp;to&nbsp;MODE&nbsp;1,&nbsp;since<span><br>
+<span class="normalText">&nbsp;these&nbsp;will&nbsp;not&nbsp;respond&nbsp;well&nbsp;to&nbsp;having&nbsp;each&nbsp;segment&nbsp;repeated.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;DISPLAY/OPEN&nbsp;the&nbsp;ENERGY&nbsp;or&nbsp;DURATION&nbsp;PROFILE<span><br>
+<span class="normalText">&nbsp;Touch:&nbsp;&lt;ENG&gt;&nbsp;or&nbsp;&lt;DUR&gt;&nbsp;with&nbsp;the&nbsp;LIGHTPEN.&nbsp;The&nbsp;profile&nbsp;will&nbsp;be<span><br>
+<span class="normalText">&nbsp;DISPLAYED&nbsp;(if&nbsp;not&nbsp;already)&nbsp;and&nbsp;OPENED&nbsp;for&nbsp;modification&nbsp;with<span><br>
+<span class="normalText">&nbsp;the&nbsp;lightpen&nbsp;-&nbsp;see&nbsp;<span><span class="reverseText">JOIN/PLOT.&nbsp;While&nbsp;open,&nbsp;the&nbsp;profile&nbsp;is<span><br>
+<span class="normalText">&nbsp;displayed&nbsp;with&nbsp;a&nbsp;DOUBLE&nbsp;LINE&nbsp;on&nbsp;the&nbsp;graph&nbsp;and&nbsp;ENG&nbsp;or&nbsp;DUR&nbsp;is<span><br>
+<span class="normalText">&nbsp;illuminated.&nbsp;The&nbsp;results&nbsp;of&nbsp;altering&nbsp;the&nbsp;energy&nbsp;or&nbsp;duration<span><br>
+<span class="normalText">&nbsp;profile&nbsp;can&nbsp;be&nbsp;heard&nbsp;in&nbsp;the&nbsp;voice&nbsp;immediately&nbsp;(once&nbsp;you&nbsp;stop<span><br>
+<span class="normalText">&nbsp;drawing).&nbsp;Display&nbsp;indicator&nbsp;lights&nbsp;(triangles)&nbsp;directly&nbsp;under<span><br>
+<span class="normalText">&nbsp;ENG&nbsp;and&nbsp;DUR&nbsp;are&nbsp;lit&nbsp;whenever&nbsp;the&nbsp;profiles&nbsp;are&nbsp;displayed.&nbsp;When<span><br>
+<span class="normalText">&nbsp;OPEN,&nbsp;either&nbsp;profile&nbsp;may&nbsp;be&nbsp;DELETED&nbsp;or&nbsp;ZEROED.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;DELETE&nbsp;or&nbsp;ZERO&nbsp;PROFILE(S)&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;delete&nbsp;profile&nbsp;from&nbsp;graph&nbsp;-&nbsp;D&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;DELETE&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;set&nbsp;profile&nbsp;to&nbsp;zero&nbsp;value&nbsp;-&nbsp;Z&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ZERO&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;If&nbsp;a&nbsp;profile&nbsp;is&nbsp;OPEN&nbsp;for&nbsp;modification&nbsp;then&nbsp;it&nbsp;will&nbsp;be&nbsp;DELETED<span><br>
+<span class="normalText">&nbsp;or&nbsp;ZEROED&nbsp;accordingly.&nbsp;If&nbsp;a&nbsp;HARMONIC&nbsp;BLOCK&nbsp;has&nbsp;been&nbsp;selected<span><br>
+<span class="normalText">&nbsp;by&nbsp;touching&nbsp;one&nbsp;of&nbsp;the&nbsp;selection&nbsp;boxes&nbsp;under&nbsp;each&nbsp;group&nbsp;of&nbsp;8<span><br>
+<span class="normalText">&nbsp;harmonics&nbsp;then&nbsp;those&nbsp;8&nbsp;harmonic&nbsp;profiles&nbsp;will&nbsp;be&nbsp;DELETED&nbsp;or<span><br>
+<span class="normalText">&nbsp;ZEROED.&nbsp;Note&nbsp;that&nbsp;DELETE&nbsp;does&nbsp;not&nbsp;alter&nbsp;the&nbsp;value&nbsp;of&nbsp;a&nbsp;profile<span><br>
+<span class="normalText">&nbsp;but&nbsp;only&nbsp;removes&nbsp;it&nbsp;from&nbsp;the&nbsp;graph&nbsp;-&nbsp;ZERO&nbsp;sets&nbsp;the&nbsp;value&nbsp;of<span><br>
+<span class="normalText">&nbsp;the&nbsp;profile&nbsp;to&nbsp;zero&nbsp;for&nbsp;all&nbsp;segments.<span><br>
+<span class="normalText">&nbsp;<span><br>
+<span class="normalText">&nbsp;WAVE&nbsp;TABLE&nbsp;voice&nbsp;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;Other&nbsp;waveforms&nbsp;instead&nbsp;of&nbsp;sinewaves&nbsp;can&nbsp;be&nbsp;used&nbsp;for&nbsp;additive<span><br>
+<span class="normalText">&nbsp;synthesis.&nbsp;WAVE&nbsp;TABLE&nbsp;voice&nbsp;lets&nbsp;waveform&nbsp;segments&nbsp;from&nbsp;another<span><br>
+<span class="normalText">&nbsp;loaded&nbsp;voice&nbsp;be&nbsp;the&nbsp;source&nbsp;of&nbsp;sound.&nbsp;Harmonic&nbsp;numbers&nbsp;become<span><br>
+<span class="normalText">&nbsp;segment&nbsp;numbers&nbsp;of&nbsp;another&nbsp;specified&nbsp;voice.&nbsp;Note&nbsp;that&nbsp;current<span><br>
+<span class="normalText">&nbsp;voice&nbsp;number&nbsp;cannot&nbsp;be&nbsp;selected&nbsp;as&nbsp;a&nbsp;WAVE&nbsp;TABLE.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move&nbsp;cursor&nbsp;to&nbsp;"WAVE&nbsp;TABLE&nbsp;voice:&nbsp;&nbsp;&nbsp;"<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;n&lt;set&gt;&nbsp;&nbsp;where&nbsp;n&nbsp;=&nbsp;voice&nbsp;number&nbsp;from&nbsp;1&nbsp;to&nbsp;8<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;(default)&nbsp;uses&nbsp;existing&nbsp;SINE&nbsp;wave&nbsp;table&nbsp;for&nbsp;harmonics.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;Cross&nbsp;fades&nbsp;between&nbsp;the&nbsp;first&nbsp;32&nbsp;segments&nbsp;of&nbsp;specified&nbsp;voice<span><br>
+<span class="normalText">&nbsp;are&nbsp;put&nbsp;into&nbsp;current&nbsp;voice&nbsp;after&nbsp;<span><span class="reverseText">COMPUTE&nbsp;command&nbsp;given.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;This&nbsp;feature&nbsp;is&nbsp;also&nbsp;on&nbsp;Page&nbsp;5.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;COMPUTE&nbsp;WAVEFORM&nbsp;from&nbsp;HARMONICS&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;COMPUTE&gt;<span><br>
+<span class="normalText">&nbsp;The&nbsp;COMPUTE&nbsp;command&nbsp;processes&nbsp;the&nbsp;<span><span class="reverseText">HARMONIC&nbsp;AMPLITUDE&nbsp;PROFILES<span><br>
+<span class="normalText">&nbsp;to&nbsp;generate&nbsp;the&nbsp;implied&nbsp;waveform&nbsp;in&nbsp;each&nbsp;segment&nbsp;of&nbsp;<span><span class="reverseText">WAVEFORM<span><br>
+<span class="normalText">&nbsp;MEMORY&nbsp;for&nbsp;the&nbsp;voice.&nbsp;In&nbsp;<span><span class="reverseText">MODE&nbsp;4&nbsp;this&nbsp;is&nbsp;done&nbsp;for&nbsp;&nbsp;128&nbsp;&nbsp;segments.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;In&nbsp;MODE&nbsp;1,&nbsp;&nbsp;32&nbsp;&nbsp;segments&nbsp;are&nbsp;computed&nbsp;AND&nbsp;the&nbsp;<span><span class="reverseText">ENERGY&nbsp;profile<span><br>
+<span class="normalText">&nbsp;is&nbsp;calculated&nbsp;from&nbsp;the&nbsp;combined&nbsp;harmonic&nbsp;amplitudes.&nbsp;The<span><br>
+<span class="normalText">&nbsp;waveform&nbsp;is&nbsp;always&nbsp;generated&nbsp;at&nbsp;optimum&nbsp;amplitude;&nbsp;i.e.,&nbsp;if<span><br>
+<span class="normalText">&nbsp;viewed&nbsp;on&nbsp;the&nbsp;PAGE&nbsp;6&nbsp;Waveform&nbsp;Graph,&nbsp;the&nbsp;amplitude&nbsp;will&nbsp;be<span><br>
+<span class="normalText">&nbsp;a&nbsp;perfect&nbsp;"fit"&nbsp;within&nbsp;the&nbsp;8-bit&nbsp;audio&nbsp;range&nbsp;of&nbsp;the&nbsp;CMI.&nbsp;In<span><br>
+<span class="normalText">&nbsp;MODE&nbsp;1&nbsp;the&nbsp;amplitude&nbsp;changes&nbsp;are&nbsp;expressed&nbsp;in&nbsp;the&nbsp;ENERGY<span><br>
+<span class="normalText">&nbsp;profile.&nbsp;Depending&nbsp;on&nbsp;the&nbsp;harmonic&nbsp;complexity,&nbsp;the&nbsp;COMPUTE&nbsp;will<span><br>
+<span class="normalText">&nbsp;require&nbsp;-&nbsp;&nbsp;in&nbsp;MODE&nbsp;1:&nbsp;&nbsp;max&nbsp;about&nbsp;&nbsp;6&nbsp;secs<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;MODE&nbsp;4:&nbsp;&nbsp;max&nbsp;about&nbsp;20&nbsp;secs<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;USE&nbsp;INTERPOLATION&nbsp;SWITCH&nbsp;&nbsp;touch&nbsp;&lt;ON&gt;&nbsp;or&nbsp;&lt;OFF&gt;&nbsp;with&nbsp;LIGHTPEN.<span><br>
+<span class="normalText">&nbsp;The&nbsp;INTERP&nbsp;switch&nbsp;allows&nbsp;you&nbsp;to&nbsp;choose&nbsp;whether&nbsp;or&nbsp;not&nbsp;an<span><br>
+<span class="normalText">&nbsp;interpolation&nbsp;("look-ahead")&nbsp;function&nbsp;is&nbsp;performed&nbsp;by&nbsp;the<span><br>
+<span class="normalText">&nbsp;COMPUTE&nbsp;commmand.&nbsp;When&nbsp;ON,&nbsp;each&nbsp;waveform&nbsp;segment&nbsp;is&nbsp;computed<span><br>
+<span class="normalText">&nbsp;from&nbsp;a&nbsp;&nbsp;mix&nbsp;&nbsp;of&nbsp;the&nbsp;harmonic&nbsp;profile&nbsp;values&nbsp;of&nbsp;that&nbsp;segment&nbsp;and<span><br>
+<span class="normalText">&nbsp;those&nbsp;of&nbsp;the&nbsp;next&nbsp;segment.&nbsp;The&nbsp;difference&nbsp;can&nbsp;be&nbsp;subtle&nbsp;and&nbsp;is<span><br>
+<span class="normalText">&nbsp;most&nbsp;obvious&nbsp;when&nbsp;rapid&nbsp;or&nbsp;spikey&nbsp;changes&nbsp;exist&nbsp;in&nbsp;the<span><br>
+<span class="normalText">&nbsp;harmonic&nbsp;profiles.&nbsp;The&nbsp;best&nbsp;idea&nbsp;is&nbsp;to&nbsp;experiment.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;SCALE&nbsp;HARMONICS&nbsp;from&nbsp;ENERGY&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&lt;return&gt;&nbsp;&nbsp;&nbsp;&lt;SCALE&gt;&nbsp;Mode&nbsp;1&nbsp;only<span><br>
+<span class="normalText">&nbsp;When&nbsp;the&nbsp;COMPUTE&nbsp;command&nbsp;is&nbsp;given&nbsp;in&nbsp;MODE&nbsp;1,&nbsp;a&nbsp;new&nbsp;ENERGY<span><br>
+<span class="normalText">&nbsp;profile&nbsp;is&nbsp;generated&nbsp;from&nbsp;the&nbsp;combined&nbsp;amplitudes&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;harmonic&nbsp;profiles.&nbsp;This&nbsp;energy&nbsp;profile&nbsp;may&nbsp;of&nbsp;course&nbsp;be<span><br>
+<span class="normalText">&nbsp;modified&nbsp;with&nbsp;the&nbsp;lightpen&nbsp;but&nbsp;the&nbsp;harmonic&nbsp;profiles&nbsp;remain<span><br>
+<span class="normalText">&nbsp;unaltered&nbsp;and&nbsp;another&nbsp;COMPUTE&nbsp;would&nbsp;only&nbsp;restore&nbsp;the&nbsp;original<span><br>
+<span class="normalText">&nbsp;energy&nbsp;profile.&nbsp;The&nbsp;SCALE&nbsp;command&nbsp;will&nbsp;RE-DRAW&nbsp;the&nbsp;harmonic<span><br>
+<span class="normalText">&nbsp;profiles&nbsp;FROM&nbsp;a&nbsp;modified&nbsp;ENERGY&nbsp;profile.&nbsp;If&nbsp;the&nbsp;message<span><br>
+<span class="normalText">&nbsp;"OVERFLOW"&nbsp;appears&nbsp;it&nbsp;means&nbsp;at&nbsp;least&nbsp;one&nbsp;profile&nbsp;has&nbsp;reached<span><br>
+<span class="normalText">&nbsp;its&nbsp;maximum&nbsp;amplitude&nbsp;and&nbsp;cannot&nbsp;be&nbsp;scaled&nbsp;up&nbsp;any&nbsp;further.<span><br>
+<span class="normalText">&nbsp;Note&nbsp;that&nbsp;there&nbsp;is&nbsp;no&nbsp;sure&nbsp;way&nbsp;to&nbsp;return&nbsp;to&nbsp;the&nbsp;condition<span><br>
+<span class="normalText">&nbsp;prior&nbsp;to&nbsp;the&nbsp;scale&nbsp;except&nbsp;to&nbsp;reload&nbsp;the&nbsp;voice.<span><br>
+<span class="normalText">&nbsp;In&nbsp;MODE&nbsp;4,&nbsp;SCALE&nbsp;will&nbsp;superimpose&nbsp;the&nbsp;ENERGY&nbsp;profile&nbsp;over&nbsp;&nbsp;any&nbsp;<span><br>
+<span class="normalText">&nbsp;waveform,&nbsp;sampled&nbsp;or&nbsp;harmonic.<span><br>
+<span class="normalText">&nbsp;No&nbsp;lightpen&nbsp;command&nbsp;for&nbsp;SCALE.&nbsp;Can&nbsp;only&nbsp;type&nbsp;S&lt;return&gt;.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;SELECT&nbsp;JOIN/PLOT&nbsp;&nbsp;touch&nbsp;&lt;JOIN&gt;&nbsp;or&nbsp;&lt;PLOT&gt;&nbsp;with&nbsp;LIGHTPEN.<span><br>
+<span class="normalText">&nbsp;This&nbsp;selector&nbsp;determines&nbsp;the&nbsp;way&nbsp;the&nbsp;lightpen&nbsp;functions&nbsp;when<span><br>
+<span class="normalText">&nbsp;drawing&nbsp;on&nbsp;the&nbsp;profile&nbsp;graph.&nbsp;When&nbsp;JOIN&nbsp;is&nbsp;selected&nbsp;each<span><br>
+<span class="normalText">&nbsp;point&nbsp;touched&nbsp;will&nbsp;be&nbsp;joined&nbsp;to&nbsp;the&nbsp;last&nbsp;by&nbsp;a&nbsp;line&nbsp;connecting<span><br>
+<span class="normalText">&nbsp;the&nbsp;two.&nbsp;When&nbsp;PLOT&nbsp;is&nbsp;selected&nbsp;each&nbsp;point&nbsp;on&nbsp;the&nbsp;profile<span><br>
+<span class="normalText">&nbsp;(32&nbsp;in&nbsp;MODE&nbsp;1&nbsp;-&nbsp;128&nbsp;in&nbsp;MODE&nbsp;4)&nbsp;may&nbsp;be&nbsp;set&nbsp;individually&nbsp;with<span><br>
+<span class="normalText">&nbsp;the&nbsp;lightpen&nbsp;without&nbsp;affecting&nbsp;the&nbsp;others.<span><br>
+<span class="normalText">&nbsp;&nbsp;THE&nbsp;LOOP<span><br>
+<span class="normalText">&nbsp;One&nbsp;or&nbsp;more&nbsp;segments&nbsp;of&nbsp;a&nbsp;voice&nbsp;may&nbsp;be&nbsp;selected&nbsp;to&nbsp;be&nbsp;LOOPED<span><br>
+<span class="normalText">&nbsp;(played&nbsp;repeatedly)&nbsp;for&nbsp;as&nbsp;long&nbsp;as&nbsp;the&nbsp;key&nbsp;is&nbsp;depressed&nbsp;and<span><br>
+<span class="normalText">&nbsp;during&nbsp;the&nbsp;DAMPING&nbsp;period&nbsp;after&nbsp;release.&nbsp;See&nbsp;also&nbsp;PAGE&nbsp;7&nbsp;HELP.<span><br>
+<span class="normalText">&nbsp;The&nbsp;LOOP&nbsp;area&nbsp;(if&nbsp;any)&nbsp;is&nbsp;displayed&nbsp;as&nbsp;a&nbsp;solid&nbsp;BAR&nbsp;on&nbsp;the<span><br>
+<span class="normalText">&nbsp;dotted&nbsp;line&nbsp;beneath&nbsp;the&nbsp;profile&nbsp;graph.&nbsp;When&nbsp;in&nbsp;MODE&nbsp;1&nbsp;the<span><br>
+<span class="normalText">&nbsp;effect&nbsp;of&nbsp;the&nbsp;ENERGY&nbsp;profile&nbsp;which&nbsp;lies&nbsp;within&nbsp;the&nbsp;LOOP&nbsp;is<span><br>
+<span class="normalText">&nbsp;CUMULATIVE.&nbsp;If&nbsp;that&nbsp;portion&nbsp;of&nbsp;energy&nbsp;profile&nbsp;results&nbsp;in&nbsp;a&nbsp;net<span><br>
+<span class="normalText">&nbsp;increase&nbsp;or&nbsp;decrease&nbsp;in&nbsp;volume&nbsp;then&nbsp;each&nbsp;repeat&nbsp;of&nbsp;the&nbsp;LOOP<span><br>
+<span class="normalText">&nbsp;will&nbsp;be&nbsp;louder&nbsp;or&nbsp;softer&nbsp;that&nbsp;the&nbsp;preceding&nbsp;one.&nbsp;The&nbsp;ENERGY<span><br>
+<span class="normalText">&nbsp;profile&nbsp;can&nbsp;be&nbsp;modified&nbsp;within&nbsp;the&nbsp;LOOP&nbsp;area&nbsp;to&nbsp;provide&nbsp;the<span><br>
+<span class="normalText">&nbsp;desired&nbsp;effect.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;SET&nbsp;LOOP&nbsp;with&nbsp;LIGHTPEN&nbsp;&nbsp;first&nbsp;touch&nbsp;&lt;LOOP&gt;&nbsp;with&nbsp;LIGHTPEN.<span><br>
+<span class="normalText">&nbsp;Touching&nbsp;the&nbsp;PROFILE&nbsp;GRAPH&nbsp;will&nbsp;now&nbsp;control&nbsp;the&nbsp;LOOP&nbsp;postion<span><br>
+<span class="normalText">&nbsp;which&nbsp;consists&nbsp;of&nbsp;a&nbsp;START&nbsp;segment&nbsp;and&nbsp;END&nbsp;segment&nbsp;(if&nbsp;these<span><br>
+<span class="normalText">&nbsp;are&nbsp;the&nbsp;same,&nbsp;there&nbsp;is&nbsp;a&nbsp;one-segment&nbsp;LOOP).<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;loop&nbsp;prior&nbsp;to&nbsp;touch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;create&nbsp;one-segment&nbsp;loop<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Touch&nbsp;left&nbsp;of&nbsp;LOOP&nbsp;centre&nbsp;&nbsp;-&nbsp;&nbsp;set&nbsp;START&nbsp;of&nbsp;loop<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Touch&nbsp;right&nbsp;of&nbsp;LOOP&nbsp;centre&nbsp;-&nbsp;&nbsp;set&nbsp;END&nbsp;of&nbsp;loop<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;ZERO&nbsp;(remove)&nbsp;the&nbsp;LOOP&nbsp;&nbsp;first&nbsp;touch&nbsp;&lt;LOOP&gt;&nbsp;with&nbsp;LIGHTPEN<span><br>
+<span class="normalText">&nbsp;(if&nbsp;not&nbsp;already&nbsp;illuminated)&nbsp;and&nbsp;then&nbsp;touch&nbsp;&lt;ZERO&gt;.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;CLEAR&nbsp;THE&nbsp;PROFILE&nbsp;GRAPH&nbsp;&nbsp;touch&nbsp;&lt;CLEAR&gt;&nbsp;with&nbsp;the&nbsp;LIGHTPEN.<span><br>
+<span class="normalText">&nbsp;This&nbsp;DELETES&nbsp;all&nbsp;profiles&nbsp;(harmonics,&nbsp;energy&nbsp;and&nbsp;duration)<span><br>
+<span class="normalText">&nbsp;from&nbsp;the&nbsp;profile&nbsp;graph.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;RESET&nbsp;(ZERO&nbsp;all&nbsp;PROFILES)&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;RESET&gt;<span><br>
+<span class="normalText">&nbsp;This&nbsp;will&nbsp;RESET&nbsp;all&nbsp;profiles&nbsp;to&nbsp;ZERO.&nbsp;The&nbsp;DURATION&nbsp;profile<span><br>
+<span class="normalText">&nbsp;is&nbsp;restored&nbsp;to&nbsp;the&nbsp;default&nbsp;50ms&nbsp;per&nbsp;segment.&nbsp;The&nbsp;following<span><br>
+<span class="normalText">&nbsp;question&nbsp;will&nbsp;appear:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESET&nbsp;PAGE&nbsp;4&nbsp;-&nbsp;ZERO&nbsp;ALL&nbsp;PROFILES&nbsp;(Y)?<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;TO&nbsp;REPLY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;Yes,&nbsp;do&nbsp;the&nbsp;reset&nbsp;&nbsp;-&nbsp;&nbsp;Y&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;No,&nbsp;do&nbsp;not&nbsp;reset&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;N&lt;return&gt;&nbsp;&nbsp;or&nbsp;&nbsp;&lt;return&gt;&nbsp;&nbsp;or&nbsp;&nbsp;&lt;ctrl-esc&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;SELECT&nbsp;any&nbsp;loaded&nbsp;VOICE&nbsp;&nbsp;for&nbsp;display&nbsp;or&nbsp;modification,<span><br>
+<span class="normalText">&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;V,filename&lt;return&gt;&nbsp;&nbsp;&nbsp;or:&nbsp;&nbsp;&nbsp;V,n&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;filename&nbsp;&nbsp;=&nbsp;&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;loaded&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;&nbsp;=&nbsp;&nbsp;the&nbsp;number&nbsp;1-8&nbsp;of&nbsp;a&nbsp;loaded&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;EXAMPLES:&nbsp;&nbsp;V,TUBA&lt;return&gt;&nbsp;&nbsp;-&nbsp;select&nbsp;voice&nbsp;TUBA<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V,4&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;select&nbsp;voice&nbsp;4<span><br>
+<span class="normalText">&nbsp;The&nbsp;NAME,&nbsp;NUMBER&nbsp;&amp;&nbsp;MODE&nbsp;of&nbsp;the&nbsp;current&nbsp;voice&nbsp;are&nbsp;shown&nbsp;in&nbsp;the<span><br>
+<span class="normalText">&nbsp;upper-right&nbsp;corner&nbsp;of&nbsp;the&nbsp;page.&nbsp;The&nbsp;names&nbsp;and&nbsp;numbers&nbsp;of&nbsp;all<span><br>
+<span class="normalText">&nbsp;loaded&nbsp;voices&nbsp;are&nbsp;shown&nbsp;on&nbsp;PAGE&nbsp;3.<span><br>
+<span class="normalText">&nbsp;TO&nbsp;LOAD/SAVE&nbsp;VOICES&nbsp;or&nbsp;INSTRUMENTS&nbsp;&nbsp;&nbsp;See&nbsp;PAGE&nbsp;1,&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;&nbsp;contains&nbsp;the&nbsp;voice&nbsp;waveform&nbsp;in&nbsp;digital&nbsp;form,<span><br>
+<span class="normalText">&nbsp;stored&nbsp;in&nbsp;the&nbsp;16,384&nbsp;bytes&nbsp;of&nbsp;memory&nbsp;provided&nbsp;in&nbsp;each&nbsp;channel.<span><br>
+<span class="normalText">&nbsp;This&nbsp;memory&nbsp;is&nbsp;divided&nbsp;into&nbsp;128&nbsp;&nbsp;WAVEFORM&nbsp;SEGMENTS&nbsp;,&nbsp;each&nbsp;with<span><br>
+<span class="normalText">&nbsp;128&nbsp;&nbsp;POINTS&nbsp;&nbsp;(bytes)&nbsp;of&nbsp;waveform.&nbsp;The&nbsp;basic&nbsp;principle&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;CMI&nbsp;is&nbsp;to&nbsp;"replay"&nbsp;this&nbsp;memory&nbsp;at&nbsp;the&nbsp;rate&nbsp;required&nbsp;to&nbsp;produce<span><br>
+<span class="normalText">&nbsp;the&nbsp;desired&nbsp;pitch.&nbsp;Each&nbsp;segment&nbsp;of&nbsp;memory&nbsp;contains&nbsp;exactly&nbsp;ONE<span><br>
+<span class="normalText">&nbsp;CYCLE&nbsp;(period)&nbsp;of&nbsp;the&nbsp;waveform.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;VOICE&nbsp;MODE&nbsp;&nbsp;controls&nbsp;the&nbsp;function&nbsp;of&nbsp;the&nbsp;waveform&nbsp;memory&nbsp;when&nbsp;a<span><br>
+<span class="normalText">&nbsp;voice&nbsp;is&nbsp;played.&nbsp;There&nbsp;are&nbsp;2&nbsp;MODES:&nbsp;called&nbsp;MODE&nbsp;1&nbsp;and&nbsp;MODE&nbsp;4.<span><br>
+<span class="normalText">&nbsp;When&nbsp;developing&nbsp;a&nbsp;new&nbsp;voice,&nbsp;the&nbsp;mode&nbsp;should&nbsp;usually&nbsp;be&nbsp;chosen<span><br>
+<span class="normalText">&nbsp;according&nbsp;to&nbsp;the&nbsp;method&nbsp;of&nbsp;waveform&nbsp;generation&nbsp;to&nbsp;be&nbsp;used:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Harmonic&nbsp;synthesis&nbsp;&nbsp;(PAGES&nbsp;4,5)&nbsp;-&nbsp;MODE&nbsp;1<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drawing/External&nbsp;sampling&nbsp;&nbsp;(PAGES&nbsp;6,8)&nbsp;-&nbsp;MODE&nbsp;4<span><br>
+<span class="normalText">&nbsp;However&nbsp;these&nbsp;are&nbsp;not&nbsp;RULES&nbsp;and&nbsp;the&nbsp;mode&nbsp;may&nbsp;be&nbsp;changed&nbsp;at<span><br>
+<span class="normalText">&nbsp;any&nbsp;time.&nbsp;Each&nbsp;has&nbsp;quite&nbsp;different&nbsp;characteristics.<span><br>
+<span class="normalText">&nbsp;&nbsp;MODE&nbsp;1&nbsp;:&nbsp;Segments&nbsp;1-32&nbsp;are&nbsp;used.&nbsp;Each&nbsp;segment&nbsp;in&nbsp;turn&nbsp;is<span><br>
+<span class="normalText">&nbsp;&nbsp;sustained&nbsp;according&nbsp;to&nbsp;the&nbsp;<span><span class="reverseText">DURATION&nbsp;profile&nbsp;position&nbsp;for&nbsp;the<span><br>
+<span class="normalText">&nbsp;&nbsp;segment.&nbsp;During&nbsp;this&nbsp;time&nbsp;the&nbsp;amplitude&nbsp;is&nbsp;modulated&nbsp;according<span><br>
+<span class="normalText">&nbsp;&nbsp;to&nbsp;the&nbsp;slope&nbsp;of&nbsp;the&nbsp;<span><span class="reverseText">ENERGY&nbsp;profile.&nbsp;The&nbsp;net&nbsp;event&nbsp;duration<span><br>
+<span class="normalText">&nbsp;&nbsp;remains&nbsp;virtually&nbsp;constant&nbsp;for&nbsp;any&nbsp;pitch.<span><br>
+<span class="normalText">&nbsp;&nbsp;MODE&nbsp;4&nbsp;:&nbsp;Segments&nbsp;1-128&nbsp;are&nbsp;used.&nbsp;Each&nbsp;is&nbsp;played&nbsp;once&nbsp;before<span><br>
+<span class="normalText">&nbsp;&nbsp;moving&nbsp;to&nbsp;the&nbsp;next&nbsp;segment&nbsp;(1&nbsp;segment&nbsp;per&nbsp;cycle).&nbsp;The&nbsp;net<span><br>
+<span class="normalText">&nbsp;&nbsp;event&nbsp;duration&nbsp;is&nbsp;(inversely)&nbsp;related&nbsp;to&nbsp;the&nbsp;pitch.<span><br>
+<span class="normalText">&nbsp;&nbsp;COMPUTE&nbsp;COMMAND&nbsp;-&nbsp;MODE&nbsp;1&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;profile&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;energy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/profile&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;=&nbsp;MODE&nbsp;1&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;harmonic&nbsp;profiles--&gt;&nbsp;COMPUTE&nbsp;--&gt;(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\waveform&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;segments&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(32)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;COMPUTE&nbsp;COMMAND&nbsp;-&nbsp;MODE&nbsp;4&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;waveform&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;harmonic&nbsp;profiles--&gt;&nbsp;COMPUTE&nbsp;--&gt;&nbsp;&nbsp;segments&nbsp;&nbsp;&nbsp;:&nbsp;=&nbsp;MODE&nbsp;4&nbsp;voice<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(128)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span><br>
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;SCALE&nbsp;COMMAND&nbsp;(MODE&nbsp;1&nbsp;only)&nbsp;:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amplitudes<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;energy&nbsp;profile--&gt;&nbsp;SCALE&nbsp;--&gt;&nbsp;&nbsp;of&nbsp;harmonic<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;profiles<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+
+  </body>
+</html>

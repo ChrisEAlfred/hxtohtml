@@ -1,0 +1,431 @@
+
+<html>
+  <head>
+    <style>
+      .normalText
+      {
+        color:green;
+	    background-color:black;
+      }
+      .reverseText
+      {
+        color:black;
+	    background-color:green;
+      }
+    </style>
+  </head>
+  <body style="background-color:black;font-family:'Courier New'">
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sheet:<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">2.&nbsp;&nbsp;<span><span class="reverseText">WAVEFORM&nbsp;GRAPH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.&nbsp;<span><span class="reverseText">GAIN&nbsp;command<span><br>
+<span class="normalText">3.&nbsp;&nbsp;<span><span class="reverseText">CURRENT&nbsp;SEGMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.&nbsp;<span><span class="reverseText">MERGE&nbsp;command<span><br>
+<span class="normalText">3.&nbsp;&nbsp;<span><span class="reverseText">DISPLAY&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.&nbsp;<span><span class="reverseText">MIX&nbsp;command<span><br>
+<span class="normalText">4.&nbsp;&nbsp;<span><span class="reverseText">START/STOP&nbsp;stepping&nbsp;&nbsp;&nbsp;12.&nbsp;<span><span class="reverseText">ROTATE&nbsp;command<span><br>
+<span class="normalText">4.&nbsp;&nbsp;<span><span class="reverseText">LIGHTPEN&nbsp;waveforms&nbsp;&nbsp;&nbsp;&nbsp;13.&nbsp;<span><span class="reverseText">REFLECT&nbsp;command<span><br>
+<span class="normalText">5.&nbsp;&nbsp;<span><span class="reverseText">POINT/LEVEL&nbsp;waveforms&nbsp;13.&nbsp;<span><span class="reverseText">REVERSE&nbsp;command<span><br>
+<span class="normalText">6.&nbsp;&nbsp;<span><span class="reverseText">JOIN/PLOT&nbsp;switch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14.&nbsp;<span><span class="reverseText">TRANSFER&nbsp;command<span><br>
+<span class="normalText">6.&nbsp;&nbsp;<span><span class="reverseText">ZERO&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15.&nbsp;<span><span class="reverseText">ADD&nbsp;command<span><br>
+<span class="normalText">7.&nbsp;&nbsp;<span><span class="reverseText">INVERT&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16.&nbsp;<span><span class="reverseText">BLEND&nbsp;command<span><br>
+<span class="normalText">7.&nbsp;&nbsp;<span><span class="reverseText">TRADITIONAL&nbsp;waveforms&nbsp;17.&nbsp;<span><span class="reverseText">JUSTIFY&nbsp;command<span><br>
+<span class="normalText">7.&nbsp;&nbsp;<span><span class="reverseText">WHITE&nbsp;NOISE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17.&nbsp;<span><span class="reverseText">VOICE&nbsp;selection<span><br>
+<span class="normalText">8.&nbsp;&nbsp;<span><span class="reverseText">FILL&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17.&nbsp;<span><span class="reverseText">LOAD/SAVE&nbsp;instrument,&nbsp;voice&nbsp;files<span><br>
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>For&nbsp;HELP&nbsp;&nbsp;touch&nbsp;any&nbsp;BOX&nbsp;with&nbsp;LIGHTPEN&nbsp;or&nbsp;TYPE:&nbsp;n&lt;set&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;n&nbsp;&nbsp;=&nbsp;&nbsp;sheet&nbsp;no.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;For&nbsp;HELP&nbsp;with&nbsp;HELP&nbsp;PAGES&nbsp;,&nbsp;touch&nbsp;<span><span class="reverseText">THIS&nbsp;or&nbsp;TYPE:&nbsp;H1&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;THE&nbsp;WAVEFORM&nbsp;GRAPH&nbsp;&nbsp;displays&nbsp;one&nbsp;SEGMENT&nbsp;(128&nbsp;points)&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;of&nbsp;a&nbsp;voice&nbsp;as&nbsp;an&nbsp;oscilloscope-like&nbsp;image.&nbsp;Any<span><br>
+<span class="normalText">&nbsp;segment&nbsp;or&nbsp;range&nbsp;of&nbsp;segments&nbsp;may&nbsp;be&nbsp;displayed.&nbsp;Waveforms&nbsp;can&nbsp;be<span><br>
+<span class="normalText">&nbsp;created&nbsp;or&nbsp;altered&nbsp;either&nbsp;by&nbsp;drawing&nbsp;on&nbsp;the&nbsp;graph&nbsp;with&nbsp;the<span><br>
+<span class="normalText">&nbsp;<span><span class="reverseText">LIGHTPEN&nbsp;or&nbsp;by&nbsp;assigning&nbsp;<span><span class="reverseText">LEVELS&nbsp;to&nbsp;individual&nbsp;waveform&nbsp;points.<span><br>
+<span class="normalText">&nbsp;Horizontal&nbsp;divisions&nbsp;mark&nbsp;1,&nbsp;8&nbsp;and&nbsp;16&nbsp;point&nbsp;intervals&nbsp;across<span><br>
+<span class="normalText">&nbsp;the&nbsp;graph.&nbsp;Any&nbsp;loaded&nbsp;VOICE&nbsp;may&nbsp;be&nbsp;<span><span class="reverseText">SELECTED&nbsp;for&nbsp;display<span><br>
+<span class="normalText">&nbsp;or&nbsp;modification.&nbsp;The&nbsp;voice&nbsp;may&nbsp;be&nbsp;in&nbsp;either&nbsp;MODE&nbsp;1&nbsp;or&nbsp;MODE&nbsp;4,<span><br>
+<span class="normalText">&nbsp;but&nbsp;remember&nbsp;that&nbsp;in&nbsp;MODE&nbsp;1&nbsp;the&nbsp;amplitude&nbsp;envelope&nbsp;is&nbsp;specified<span><br>
+<span class="normalText">&nbsp;with&nbsp;the&nbsp;ENERGY&nbsp;profile&nbsp;on&nbsp;PAGE&nbsp;4.&nbsp;See&nbsp;PAGE&nbsp;4&nbsp;HELP&nbsp;for&nbsp;more<span><br>
+<span class="normalText">&nbsp;about&nbsp;waveform&nbsp;memory,&nbsp;segments&nbsp;and&nbsp;voice&nbsp;mode.<span><br>
+<span class="normalText">&nbsp;The&nbsp;DISPLAY&nbsp;and&nbsp;FILL&nbsp;functions&nbsp;&nbsp;are&nbsp;exact&nbsp;opposites&nbsp;of&nbsp;each<span><br>
+<span class="normalText">&nbsp;other.&nbsp;The&nbsp;DISPLAY&nbsp;function&nbsp;refers&nbsp;to&nbsp;the&nbsp;moving&nbsp;of&nbsp;a&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;segment&nbsp;INTO&nbsp;the&nbsp;GRAPH;&nbsp;the&nbsp;FILL&nbsp;function&nbsp;refers&nbsp;to&nbsp;the&nbsp;moving<span><br>
+<span class="normalText">&nbsp;of&nbsp;the&nbsp;waveform&nbsp;displayed&nbsp;on&nbsp;the&nbsp;graph&nbsp;INTO&nbsp;a&nbsp;WAVEFORM&nbsp;SEGMENT.<span><br>
+<span class="normalText">&nbsp;This&nbsp;allows&nbsp;a&nbsp;segment&nbsp;to&nbsp;be&nbsp;displayed&nbsp;and&nbsp;then&nbsp;modified&nbsp;to&nbsp;any<span><br>
+<span class="normalText">&nbsp;degree&nbsp;without&nbsp;losing&nbsp;the&nbsp;original&nbsp;(which&nbsp;remains&nbsp;unaltered&nbsp;in<span><br>
+<span class="normalText">&nbsp;waveform&nbsp;memory)&nbsp;until&nbsp;the&nbsp;segment&nbsp;is&nbsp;filled&nbsp;with&nbsp;the&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;displayed&nbsp;on&nbsp;the&nbsp;graph.&nbsp;Thus&nbsp;the&nbsp;graph&nbsp;is&nbsp;a&nbsp;kind&nbsp;of&nbsp;scratch-pad<span><br>
+<span class="normalText">&nbsp;for&nbsp;waveform&nbsp;development.&nbsp;The&nbsp;features&nbsp;of&nbsp;PAGE&nbsp;6&nbsp;fall&nbsp;into&nbsp;two<span><br>
+<span class="normalText">&nbsp;groups:&nbsp;those&nbsp;which&nbsp;directly&nbsp;modify&nbsp;the&nbsp;waveform&nbsp;memory&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;voice,&nbsp;and&nbsp;those&nbsp;which&nbsp;change&nbsp;only&nbsp;the&nbsp;displayed&nbsp;waveform&nbsp;and<span><br>
+<span class="normalText">&nbsp;thus&nbsp;require&nbsp;you&nbsp;to&nbsp;use&nbsp;the&nbsp;<span><span class="reverseText">FILL&nbsp;command&nbsp;before&nbsp;the&nbsp;voice<span><br>
+<span class="normalText">&nbsp;will&nbsp;actually&nbsp;be&nbsp;modified.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;SET&nbsp;CURRENT&nbsp;SEGMENT&nbsp;NUMBER&nbsp;&nbsp;use&nbsp;&lt;arrow&gt;&nbsp;keys&nbsp;or&nbsp;LIGHTPEN<span><br>
+<span class="normalText">&nbsp;to&nbsp;TAB&nbsp;to&nbsp;CURRENT&nbsp;SEGMENT,&nbsp;TYPE:&nbsp;s&lt;set&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;&nbsp;=&nbsp;&nbsp;waveform&nbsp;segment&nbsp;number,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;The&nbsp;selected&nbsp;segment&nbsp;of&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;will&nbsp;be&nbsp;DISPLAYED&nbsp;on<span><br>
+<span class="normalText">&nbsp;the&nbsp;waveform&nbsp;graph.&nbsp;This&nbsp;is&nbsp;now&nbsp;the&nbsp;CURRENT&nbsp;SEGMENT.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;DISPLAY&nbsp;a&nbsp;WAVEFORM&nbsp;SEGMENT&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;display&nbsp;current&nbsp;segment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;D&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;DISPLAY&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;display&nbsp;segment&nbsp;(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;D,s&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n/a<span><br>
+<span class="normalText">&nbsp;&nbsp;display&nbsp;segment&nbsp;(s)&nbsp;thru&nbsp;(e)&nbsp;-&nbsp;D,s,e&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n/a<span><br>
+<span class="normalText">&nbsp;&nbsp;display&nbsp;ALL&nbsp;segments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;D,*&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n/a<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;EXAMPLES:&nbsp;&nbsp;&nbsp;D,24&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display&nbsp;segment&nbsp;24<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D,1,16&lt;return&gt;&nbsp;&nbsp;&nbsp;Display&nbsp;segments&nbsp;1&nbsp;thru&nbsp;16<span><br>
+<span class="normalText">&nbsp;If&nbsp;only&nbsp;1&nbsp;segment&nbsp;number&nbsp;is&nbsp;specified&nbsp;(as&nbsp;in&nbsp;1st&nbsp;example)&nbsp;the<span><br>
+<span class="normalText">&nbsp;waveform&nbsp;segment&nbsp;is&nbsp;displayed&nbsp;and&nbsp;becomes&nbsp;the&nbsp;new&nbsp;CURRENT<span><br>
+<span class="normalText">&nbsp;SEGMENT.&nbsp;If&nbsp;a&nbsp;RANGE&nbsp;of&nbsp;segments&nbsp;is&nbsp;specified&nbsp;they&nbsp;will&nbsp;be<span><br>
+<span class="normalText">&nbsp;displayed&nbsp;sequentially,&nbsp;called&nbsp;a&nbsp;&nbsp;STEPPING&nbsp;DISPLAY&nbsp;,&nbsp;at&nbsp;a&nbsp;speed<span><br>
+<span class="normalText">&nbsp;set&nbsp;by&nbsp;the&nbsp;STEP&nbsp;RATE&nbsp;fader.&nbsp;The&nbsp;LAST&nbsp;segment&nbsp;of&nbsp;the&nbsp;range&nbsp;will<span><br>
+<span class="normalText">&nbsp;be&nbsp;the&nbsp;new&nbsp;current&nbsp;segment.&nbsp;If&nbsp;no&nbsp;segments&nbsp;are&nbsp;specified&nbsp;with<span><br>
+<span class="normalText">&nbsp;the&nbsp;command,&nbsp;the&nbsp;current&nbsp;segment&nbsp;will&nbsp;be&nbsp;re-displayed.&nbsp;Note<span><br>
+<span class="normalText">&nbsp;that&nbsp;any&nbsp;modifications&nbsp;to&nbsp;the&nbsp;displayed&nbsp;waveform&nbsp;that&nbsp;have&nbsp;not<span><br>
+<span class="normalText">&nbsp;been&nbsp;<span><span class="reverseText">FILLED&nbsp;will&nbsp;be&nbsp;lost.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;USE&nbsp;CURRENT&nbsp;SEGMENT&nbsp;FADER&nbsp;&nbsp;touch&nbsp;fader&nbsp;with&nbsp;the&nbsp;LIGHTPEN&nbsp;and<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;position&nbsp;as&nbsp;desired.&nbsp;Any&nbsp;segment&nbsp;may&nbsp;be&nbsp;DISPLAYED&nbsp;by&nbsp;movement<span><br>
+<span class="normalText">&nbsp;of&nbsp;this&nbsp;fader&nbsp;(located&nbsp;to&nbsp;right&nbsp;of&nbsp;current&nbsp;segment&nbsp;number).<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;START/STOP&nbsp;STEPPING&nbsp;DISPLAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;start&nbsp;display&nbsp;(when&nbsp;stopped)&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;S&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;START&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;stop&nbsp;display&nbsp;(when&nbsp;in&nbsp;progress)&nbsp;-&nbsp;S&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;STOP&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;If&nbsp;a&nbsp;STEPPING&nbsp;DISPLAY&nbsp;is&nbsp;in&nbsp;progess,&nbsp;you&nbsp;may&nbsp;STOP&nbsp;it&nbsp;whenever<span><br>
+<span class="normalText">&nbsp;desired.&nbsp;Last&nbsp;segment&nbsp;displayed&nbsp;will&nbsp;be&nbsp;new&nbsp;CURRENT&nbsp;SEGMENT.<span><br>
+<span class="normalText">&nbsp;Also,&nbsp;you&nbsp;may&nbsp;START&nbsp;a&nbsp;stepping&nbsp;display&nbsp;at&nbsp;any&nbsp;time&nbsp;which&nbsp;will<span><br>
+<span class="normalText">&nbsp;proceed&nbsp;from&nbsp;CURRENT&nbsp;SEGMENT&nbsp;to&nbsp;last&nbsp;segment&nbsp;(128).&nbsp;&nbsp;STEP&nbsp;RATE&nbsp;<span><br>
+<span class="normalText">&nbsp;fader&nbsp;sets&nbsp;time&nbsp;for&nbsp;which&nbsp;each&nbsp;segment&nbsp;is&nbsp;displayed,&nbsp;and&nbsp;is<span><br>
+<span class="normalText">&nbsp;adjusted&nbsp;by&nbsp;positioning&nbsp;it&nbsp;with&nbsp;LIGHTPEN&nbsp;(even&nbsp;while&nbsp;stepping<span><br>
+<span class="normalText">&nbsp;display&nbsp;in&nbsp;progress).&nbsp;A&nbsp;stepping&nbsp;display&nbsp;may&nbsp;also&nbsp;be&nbsp;STOPPED<span><br>
+<span class="normalText">&nbsp;by&nbsp;pressing&nbsp;&lt;ctrl-esc&gt;.&nbsp;(Press&nbsp;&amp;&nbsp;hold&nbsp;&lt;ctrl&gt;&nbsp;-&nbsp;press&nbsp;&lt;esc&gt;&nbsp;).<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;CREATE&nbsp;or&nbsp;MODIFY&nbsp;DISPLAYED&nbsp;WAVEFORM&nbsp;with&nbsp;LIGHTPEN&nbsp;&nbsp;simply&nbsp;dra<span><br>
+<span class="normalText">w<span><br>
+<span class="normalText">&nbsp;on&nbsp;WAVEFORM&nbsp;GRAPH&nbsp;with&nbsp;lightpen.&nbsp;When&nbsp;drawing,&nbsp;best&nbsp;accuracy<span><br>
+<span class="normalText">&nbsp;will&nbsp;be&nbsp;usually&nbsp;be&nbsp;obtained&nbsp;by&nbsp;triggering&nbsp;lightpen&nbsp;with&nbsp;a<span><br>
+<span class="normalText">&nbsp;single&nbsp;quick&nbsp;"blip"&nbsp;of&nbsp;the&nbsp;finger&nbsp;rather&nbsp;than&nbsp;with&nbsp;a&nbsp;prolonged<span><br>
+<span class="normalText">&nbsp;touch.&nbsp;Large&nbsp;flowing&nbsp;shapes&nbsp;are&nbsp;best&nbsp;drawn&nbsp;by&nbsp;selecting&nbsp;JOIN<span><br>
+<span class="normalText">&nbsp;(see&nbsp;<span><span class="reverseText">JOIN/PLOT&nbsp;switch)&nbsp;and&nbsp;using&nbsp;a&nbsp;prolonged&nbsp;trigger.<span><br>
+<span class="normalText">&nbsp;&nbsp;Remember,&nbsp;the&nbsp;waveform&nbsp;graph&nbsp;is&nbsp;a&nbsp;scratch&nbsp;pad:&nbsp;&nbsp;<span><span class="reverseText">FILL&nbsp;command<span><br>
+<span class="normalText">&nbsp;MUST&nbsp;be&nbsp;used&nbsp;to&nbsp;move&nbsp;whatever&nbsp;is&nbsp;drawn&nbsp;into&nbsp;WAVEFORM&nbsp;MEMORY<span><br>
+<span class="normalText">&nbsp;before&nbsp;it&nbsp;becomes&nbsp;part&nbsp;of&nbsp;the&nbsp;voice&nbsp;(to&nbsp;be&nbsp;heard&nbsp;&nbsp;or&nbsp;&nbsp;saved).<span><br>
+<span class="normalText">&nbsp;A&nbsp;good&nbsp;way&nbsp;to&nbsp;explore&nbsp;PAGE&nbsp;6&nbsp;is&nbsp;to&nbsp;put&nbsp;a&nbsp;LOOP&nbsp;(PAGE&nbsp;4&nbsp;or&nbsp;7)&nbsp;in<span><br>
+<span class="normalText">&nbsp;&nbsp;segment&nbsp;1&nbsp;of&nbsp;a&nbsp;MODE&nbsp;4&nbsp;voice.<span><br>
+<span class="normalText">&nbsp;Then&nbsp;simply&nbsp;draw,&nbsp;touch&nbsp;&lt;FILL&gt;&nbsp;and&nbsp;play&nbsp;your&nbsp;creation.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;CREATE&nbsp;or&nbsp;MODIFY&nbsp;DISPLAYED&nbsp;WAVEFORM&nbsp;with&nbsp;POINT/LEVEL&nbsp;&nbsp;use<span><br>
+<span class="normalText">&nbsp;&lt;arrow&gt;&nbsp;keys&nbsp;or&nbsp;LIGHTPEN&nbsp;to&nbsp;TAB&nbsp;to&nbsp;POINT&nbsp;/&nbsp;LEVEL,&nbsp;TYPE:&nbsp;n&lt;set&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;n&nbsp;&nbsp;=&nbsp;&nbsp;for&nbsp;POINT:&nbsp;desired&nbsp;point&nbsp;in&nbsp;segment,&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;LEVEL:&nbsp;desired&nbsp;amplitude,&nbsp;-128&nbsp;to&nbsp;127<span><br>
+<span class="normalText">&nbsp;The&nbsp;LEVEL&nbsp;value&nbsp;will&nbsp;ALWAYS&nbsp;show&nbsp;the&nbsp;amplitude&nbsp;of&nbsp;the&nbsp;single<span><br>
+<span class="normalText">&nbsp;point&nbsp;of&nbsp;the&nbsp;waveform&nbsp;segment&nbsp;indicated&nbsp;by&nbsp;POINT&nbsp;(even&nbsp;during<span><br>
+<span class="normalText">&nbsp;a&nbsp;stepping&nbsp;display).&nbsp;When&nbsp;you&nbsp;tab&nbsp;to&nbsp;either&nbsp;LEVEL&nbsp;or&nbsp;POINT&nbsp;a<span><br>
+<span class="normalText">&nbsp;marker&nbsp;appears&nbsp;on&nbsp;the&nbsp;WAVEFORM&nbsp;GRAPH&nbsp;to&nbsp;identify&nbsp;the&nbsp;selected<span><br>
+<span class="normalText">&nbsp;point.&nbsp;Select&nbsp;desired&nbsp;POINT&nbsp;and&nbsp;then&nbsp;set&nbsp;LEVEL&nbsp;to&nbsp;modify&nbsp;the<span><br>
+<span class="normalText">&nbsp;displayed&nbsp;waveform.&nbsp;Note&nbsp;that&nbsp;the&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is&nbsp;NOT<span><br>
+<span class="normalText">&nbsp;affected&nbsp;until&nbsp;the&nbsp;<span><span class="reverseText">FILL&nbsp;command&nbsp;is&nbsp;used.&nbsp;See&nbsp;<span><span class="reverseText">JOIN/PLOT.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;When&nbsp;cursor&nbsp;is&nbsp;tabbed&nbsp;to&nbsp;POINT&nbsp;or&nbsp;LEVEL,&nbsp;operation&nbsp;of&nbsp;lightpen<span><br>
+<span class="normalText">&nbsp;is&nbsp;different.<span><br>
+<span class="normalText">&nbsp;&nbsp;POINT:&nbsp;touching&nbsp;graph&nbsp;selects&nbsp;new&nbsp;POINT,&nbsp;displaying&nbsp;its&nbsp;LEVEL<span><br>
+<span class="normalText">&nbsp;&nbsp;LEVEL:&nbsp;touching&nbsp;graph&nbsp;assigns&nbsp;new&nbsp;LEVEL&nbsp;to&nbsp;selected&nbsp;point.<span><br>
+<span class="normalText">Lightpen&nbsp;reverts&nbsp;to&nbsp;normal&nbsp;when&nbsp;you&nbsp;tab&nbsp;away&nbsp;from&nbsp;POINT/LEVEL.<span><br>
+<span class="normalText">&nbsp;&nbsp;THE&nbsp;JOIN/PLOT&nbsp;SWITCH&nbsp;&nbsp;selects&nbsp;the&nbsp;way&nbsp;in&nbsp;which&nbsp;the&nbsp;WAVEFORM&nbsp;GRA<span><br>
+<span class="normalText">PH<span><br>
+<span class="normalText">&nbsp;responds&nbsp;to&nbsp;alteration&nbsp;by&nbsp;the&nbsp;<span><span class="reverseText">LIGHTPEN&nbsp;or&nbsp;assignment&nbsp;to&nbsp;<span><span class="reverseText">LEVEL.<span><br>
+<span class="normalText">&nbsp;There&nbsp;are&nbsp;128&nbsp;points&nbsp;in&nbsp;the&nbsp;displayed&nbsp;waveform.&nbsp;Both&nbsp;the&nbsp;level<span><br>
+<span class="normalText">&nbsp;control&nbsp;and&nbsp;lightpen&nbsp;work&nbsp;by&nbsp;setting&nbsp;the&nbsp;amplitudes&nbsp;of&nbsp;single<span><br>
+<span class="normalText">&nbsp;points.&nbsp;However,&nbsp;when&nbsp;JOIN&nbsp;is&nbsp;selected&nbsp;each&nbsp;subsequent<span><br>
+<span class="normalText">&nbsp;alteration&nbsp;will&nbsp;be&nbsp;JOINED&nbsp;to&nbsp;the&nbsp;last&nbsp;by&nbsp;a&nbsp;straight&nbsp;line&nbsp;(the<span><br>
+<span class="normalText">&nbsp;points&nbsp;between&nbsp;are&nbsp;set&nbsp;automatically).&nbsp;If&nbsp;PLOT&nbsp;is&nbsp;selected&nbsp;each<span><br>
+<span class="normalText">&nbsp;point&nbsp;can&nbsp;be&nbsp;individually&nbsp;altered&nbsp;without&nbsp;affecting&nbsp;the&nbsp;others.<span><br>
+<span class="normalText">&nbsp;JOIN&nbsp;is&nbsp;good&nbsp;for&nbsp;creating&nbsp;waveforms&nbsp;or&nbsp;large-scale&nbsp;alterations.<span><br>
+<span class="normalText">&nbsp;PLOT&nbsp;is&nbsp;better&nbsp;for&nbsp;fine&nbsp;detail.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;To&nbsp;SELECT&nbsp;JOIN&nbsp;or&nbsp;PLOT&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select&nbsp;JOIN&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;J&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;JOIN&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select&nbsp;PLOT&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;P&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PLOT&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;ZERO&nbsp;the&nbsp;DISPLAYED&nbsp;WAVEFORM&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ZERO&gt;<span><br>
+<span class="normalText">&nbsp;This&nbsp;will&nbsp;ZERO&nbsp;the&nbsp;waveform&nbsp;displayed&nbsp;on&nbsp;the&nbsp;WAVEFORM&nbsp;GRAPH.<span><br>
+<span class="normalText">&nbsp;Note&nbsp;that&nbsp;the&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is&nbsp;NOT&nbsp;affected&nbsp;until&nbsp;the&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">command&nbsp;is&nbsp;used.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;To&nbsp;ZERO&nbsp;entire&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;(silent&nbsp;voice)&nbsp;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;Z&lt;return&gt;&nbsp;&nbsp;&nbsp;-&nbsp;zero&nbsp;display&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F,*&lt;return&gt;&nbsp;-&nbsp;Fill&nbsp;all&nbsp;segments<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;TO&nbsp;INVERT&nbsp;the&nbsp;DISPLAYED&nbsp;WAVEFORM&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;INVERT&gt;<span><br>
+<span class="normalText">&nbsp;This&nbsp;will&nbsp;INVERT&nbsp;the&nbsp;PHASE&nbsp;of&nbsp;the&nbsp;waveform&nbsp;displayed&nbsp;on&nbsp;the<span><br>
+<span class="normalText">&nbsp;WAVEFORM&nbsp;GRAPH.&nbsp;Note&nbsp;that&nbsp;the&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is&nbsp;automatically<span><br>
+<span class="normalText">&nbsp;<span><span class="reverseText">FILLED&nbsp;when&nbsp;INVERT&nbsp;is&nbsp;used.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;GENERATE&nbsp;TRADITIONAL&nbsp;WAVEFORMS&nbsp;&nbsp;touch&nbsp;desired&nbsp;waveshape&nbsp;image<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;with&nbsp;LIGHTPEN.&nbsp;TRIANGLE,&nbsp;RAMP&nbsp;or&nbsp;variable-width&nbsp;PULSE&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;will&nbsp;be&nbsp;generated&nbsp;on&nbsp;the&nbsp;graph.<span><br>
+<span class="normalText">&nbsp;Otherwise&nbsp;type:&nbsp;&nbsp;&nbsp;TRI&lt;return&gt;&nbsp;&nbsp;for&nbsp;TRIANGLE&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SAW&lt;return&gt;&nbsp;&nbsp;for&nbsp;SAWTOOTH&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQ&lt;return&gt;&nbsp;&nbsp;&nbsp;for&nbsp;SQUARE&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;Note&nbsp;that&nbsp;the&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is&nbsp;NOT&nbsp;affected&nbsp;until&nbsp;the&nbsp;FILL<span><br>
+<span class="normalText">&nbsp;command&nbsp;is&nbsp;used.&nbsp;SINE&nbsp;waveforms&nbsp;are&nbsp;generated&nbsp;on&nbsp;Page&nbsp;5.<span><br>
+<span class="normalText">&nbsp;&nbsp;To&nbsp;set&nbsp;PULSE&nbsp;WIDTH&nbsp;&nbsp;use&nbsp;&lt;arrow&gt;&nbsp;keys&nbsp;or&nbsp;LIGHTPEN&nbsp;to&nbsp;TAB&nbsp;to<span><br>
+<span class="normalText">&nbsp;&nbsp;width&nbsp;control&nbsp;(to&nbsp;right&nbsp;of&nbsp;pulse&nbsp;image).<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;n&lt;set&gt;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;n&nbsp;=&nbsp;1&nbsp;-&nbsp;99<span><br>
+<span class="normalText">&nbsp;&nbsp;Touching&nbsp;the&nbsp;pulse&nbsp;image&nbsp;will&nbsp;&nbsp;then&nbsp;&nbsp;generate&nbsp;a&nbsp;pulse&nbsp;wave&nbsp;of<span><br>
+<span class="normalText">&nbsp;&nbsp;the&nbsp;width&nbsp;specified.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;GENERATE&nbsp;WHITE&nbsp;NOISE&nbsp;<span><br>
+<span class="normalText">&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;NO,sss,eee&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;sss,eee&nbsp;=&nbsp;1&nbsp;to&nbsp;128<span><br>
+<span class="normalText">&nbsp;FILL&nbsp;segments&nbsp;sss&nbsp;to&nbsp;eee&nbsp;with&nbsp;noise,&nbsp;default&nbsp;current&nbsp;segment.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;FILL&nbsp;WAVEFORM&nbsp;SEGMENT(S)&nbsp;with&nbsp;DISPLAYED&nbsp;WAVEFORM<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;fill&nbsp;the&nbsp;current&nbsp;segment&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;F&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FILL&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;fill&nbsp;segment&nbsp;(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;F,s&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n/a<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;fill&nbsp;segments&nbsp;(s)&nbsp;thru&nbsp;(e)&nbsp;-&nbsp;&nbsp;&nbsp;F,s,e&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n/a<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;fill&nbsp;ALL&nbsp;segments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;F,*&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n/a<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;EXAMPLES:&nbsp;&nbsp;F,68&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fill&nbsp;segment&nbsp;68<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F,119,127&lt;return&gt;&nbsp;&nbsp;Fill&nbsp;segments&nbsp;119&nbsp;thru&nbsp;127<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;The&nbsp;DISPLAYED&nbsp;waveform&nbsp;is&nbsp;moved&nbsp;into&nbsp;the&nbsp;selected&nbsp;segment(s)<span><br>
+<span class="normalText">&nbsp;of&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;for&nbsp;the&nbsp;current&nbsp;voice.&nbsp;Modifications&nbsp;made<span><br>
+<span class="normalText">&nbsp;to&nbsp;the&nbsp;displayed&nbsp;waveform&nbsp;by:&nbsp;LIGHTPEN&nbsp;drawing<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POINT/LEVEL&nbsp;assignment<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZERO&nbsp;and&nbsp;INVERT&nbsp;commands<span><br>
+<span class="normalText">&nbsp;do&nbsp;&nbsp;not&nbsp;&nbsp;affect&nbsp;the&nbsp;waveform&nbsp;memory&nbsp;(sound)&nbsp;of&nbsp;the&nbsp;voice&nbsp;&nbsp;until&nbsp;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;the&nbsp;FILL&nbsp;command&nbsp;is&nbsp;used.&nbsp;Before&nbsp;FILLED,&nbsp;these&nbsp;modifications<span><br>
+<span class="normalText">&nbsp;exist&nbsp;only&nbsp;on&nbsp;the&nbsp;WAVEFORM&nbsp;GRAPH&nbsp;and&nbsp;are&nbsp;discarded&nbsp;if&nbsp;you<span><br>
+<span class="normalText">&nbsp;display&nbsp;another&nbsp;segment&nbsp;or&nbsp;select&nbsp;another&nbsp;display&nbsp;page.&nbsp;When<span><br>
+<span class="normalText">&nbsp;FILLED,&nbsp;the&nbsp;changes&nbsp;become&nbsp;part&nbsp;of&nbsp;the&nbsp;voice&nbsp;-&nbsp;the&nbsp;previous<span><br>
+<span class="normalText">&nbsp;content&nbsp;of&nbsp;the&nbsp;FILLED&nbsp;segment(s)&nbsp;is&nbsp;gone&nbsp;and&nbsp;can&nbsp;only&nbsp;be<span><br>
+<span class="normalText">&nbsp;restored&nbsp;by&nbsp;<span><span class="reverseText">the&nbsp;voice&nbsp;again.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;MODIFY&nbsp;AMPLITUDE&nbsp;(GAIN)&nbsp;OF&nbsp;SEGMENT(S)&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;modify&nbsp;current&nbsp;segment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;G,p&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;modify&nbsp;segment&nbsp;(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;G,p,n&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;modify&nbsp;segments&nbsp;(s)&nbsp;thru&nbsp;(e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;G,p,s,e&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;modify&nbsp;ALL&nbsp;segments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;G,p,*&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;&nbsp;=&nbsp;&nbsp;desired&nbsp;GAIN&nbsp;as&nbsp;a&nbsp;PERCENTAGE<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;EXAMPLES:<span><br>
+<span class="normalText">&nbsp;G,50&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gain&nbsp;50%&nbsp;current&nbsp;segment&nbsp;(half&nbsp;or&nbsp;-6db)<span><br>
+<span class="normalText">&nbsp;G,110,4&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Gain&nbsp;110%&nbsp;segment&nbsp;4<span><br>
+<span class="normalText">&nbsp;G,33,10,64&lt;return&gt;&nbsp;Gain&nbsp;33%&nbsp;segments&nbsp;10&nbsp;thru&nbsp;64<span><br>
+<span class="normalText">&nbsp;G,200,*&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Gain&nbsp;200%&nbsp;all&nbsp;segments&nbsp;(double)<span><br>
+<span class="normalText">&nbsp;G,MAX&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gain&nbsp;current&nbsp;segment&nbsp;to&nbsp;maximum<span><br>
+<span class="normalText">&nbsp;G,=75,*&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Gain&nbsp;all&nbsp;segments&nbsp;to&nbsp;75%&nbsp;of&nbsp;maximum<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;The&nbsp;AMPLITUDE&nbsp;of&nbsp;the&nbsp;selected&nbsp;segment(s)&nbsp;of&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is<span><br>
+<span class="normalText">&nbsp;modified&nbsp;according&nbsp;to&nbsp;the&nbsp;GAIN&nbsp;specified.&nbsp;If&nbsp;the&nbsp;specifed&nbsp;gain<span><br>
+<span class="normalText">&nbsp;will&nbsp;exceed&nbsp;maximum&nbsp;range&nbsp;this&nbsp;question&nbsp;will&nbsp;appear:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLIPPING&nbsp;WILL&nbsp;OCCUR&nbsp;-&nbsp;PROCEED&nbsp;(Y)?<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;To&nbsp;reply:&nbsp;Yes&nbsp;&nbsp;-&nbsp;type:&nbsp;Y&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N&lt;return&gt;&nbsp;&nbsp;or&nbsp;&nbsp;&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;If&nbsp;you&nbsp;decline&nbsp;then&nbsp;nothing&nbsp;will&nbsp;have&nbsp;changed,&nbsp;otherwise&nbsp;the<span><br>
+<span class="normalText">&nbsp;GAIN&nbsp;command&nbsp;will&nbsp;proceed&nbsp;and&nbsp;at&nbsp;least&nbsp;one&nbsp;of&nbsp;the&nbsp;waveform<span><br>
+<span class="normalText">&nbsp;segments&nbsp;will&nbsp;CLIP.&nbsp;Clipping&nbsp;may&nbsp;be&nbsp;desired,&nbsp;of&nbsp;course.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;MERGE&nbsp;BETWEEN&nbsp;TWO&nbsp;WAVEFORM&nbsp;SEGMENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;merge&nbsp;from&nbsp;segment&nbsp;(s)&nbsp;to&nbsp;(e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;ME,s,e&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;merge&nbsp;from&nbsp;segment&nbsp;1&nbsp;to&nbsp;128&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;ME,*&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;merge&nbsp;from&nbsp;current&nbsp;segment+(o)...<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;current&nbsp;segment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;ME,o&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;=&nbsp;&nbsp;offset,&nbsp;range&nbsp;-127&nbsp;-&nbsp;+127<span><br>
+<span class="normalText">&nbsp;EXAMPLES:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ME,1,8&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Merge&nbsp;from&nbsp;segment&nbsp;1&nbsp;to&nbsp;segment&nbsp;8<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ME,-32&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Merge&nbsp;from&nbsp;current&nbsp;seg-32&nbsp;to&nbsp;current&nbsp;seg<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ME,+60&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Merge&nbsp;from&nbsp;current&nbsp;seg+60&nbsp;to&nbsp;current&nbsp;seg<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;This&nbsp;will&nbsp;generate&nbsp;a&nbsp;"crossfade"&nbsp;between&nbsp;the&nbsp;2&nbsp;segments&nbsp;-&nbsp;there<span><br>
+<span class="normalText">&nbsp;must&nbsp;be&nbsp;at&nbsp;&nbsp;least&nbsp;&nbsp;one&nbsp;segment&nbsp;in&nbsp;between.&nbsp;The&nbsp;START&nbsp;segment&nbsp;(1s<span><br>
+<span class="normalText">t<span><br>
+<span class="normalText">&nbsp;number&nbsp;specified)&nbsp;and&nbsp;END&nbsp;segment&nbsp;(2nd&nbsp;number&nbsp;specifed)&nbsp;are&nbsp;not<span><br>
+<span class="normalText">&nbsp;affected.&nbsp;The&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;of&nbsp;the&nbsp;segments&nbsp;in&nbsp;between&nbsp;is<span><br>
+<span class="normalText">&nbsp;modified&nbsp;to&nbsp;contain&nbsp;the&nbsp;merge&nbsp;-&nbsp;the&nbsp;previous&nbsp;content&nbsp;of&nbsp;these<span><br>
+<span class="normalText">&nbsp;segments&nbsp;is&nbsp;not&nbsp;important.&nbsp;Only&nbsp;the&nbsp;START&nbsp;and&nbsp;END&nbsp;segments<span><br>
+<span class="normalText">&nbsp;have&nbsp;any&nbsp;significance&nbsp;in&nbsp;the&nbsp;MERGE&nbsp;command.&nbsp;Merging&nbsp;from&nbsp;1-128<span><br>
+<span class="normalText">&nbsp;will&nbsp;take&nbsp;about&nbsp;18&nbsp;seconds.&nbsp;See&nbsp;also&nbsp;<span><span class="reverseText">MIX.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start&nbsp;segment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(fading&nbsp;out&nbsp;)..........<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.........(&nbsp;fading&nbsp;in)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;segment<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;MIX&nbsp;BETWEEN&nbsp;TWO&nbsp;WAVEFORM&nbsp;SEGMENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;mix&nbsp;from&nbsp;segment&nbsp;(s)&nbsp;to&nbsp;(e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;MI,s,e&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;mix&nbsp;from&nbsp;segment&nbsp;1&nbsp;to&nbsp;128&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;MI,*&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;mix&nbsp;from&nbsp;current&nbsp;segment+(o)...<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;current&nbsp;segment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;MI,o&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;=&nbsp;&nbsp;offset,&nbsp;range&nbsp;-127&nbsp;-&nbsp;+127<span><br>
+<span class="normalText">&nbsp;EXAMPLES:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI,1,8&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Mix&nbsp;from&nbsp;segment&nbsp;1&nbsp;to&nbsp;segment&nbsp;8<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI,48,5&lt;return&gt;&nbsp;&nbsp;&nbsp;Mix&nbsp;from&nbsp;segment&nbsp;48&nbsp;to&nbsp;segment&nbsp;5<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI,-32&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Mix&nbsp;from&nbsp;current&nbsp;seg-32&nbsp;to&nbsp;current&nbsp;seg<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI,+60&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Mix&nbsp;from&nbsp;current&nbsp;seg+60&nbsp;to&nbsp;current&nbsp;seg<span><br>
+<span class="normalText">&nbsp;Like&nbsp;the&nbsp;<span><span class="reverseText">MERGE&nbsp;command,&nbsp;this&nbsp;will&nbsp;generate&nbsp;a&nbsp;"crossfade"<span><br>
+<span class="normalText">&nbsp;between&nbsp;the&nbsp;2&nbsp;segments&nbsp;-&nbsp;there&nbsp;must&nbsp;be&nbsp;at&nbsp;&nbsp;least&nbsp;&nbsp;one&nbsp;segment&nbsp;in<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;between.&nbsp;The&nbsp;START&nbsp;segment&nbsp;(1st&nbsp;number&nbsp;specified)&nbsp;and&nbsp;END<span><br>
+<span class="normalText">&nbsp;segment&nbsp;(2nd&nbsp;number&nbsp;specified)&nbsp;are&nbsp;not&nbsp;affected.&nbsp;The&nbsp;WAVEFORM<span><br>
+<span class="normalText">&nbsp;MEMORY&nbsp;of&nbsp;each&nbsp;segment&nbsp;in&nbsp;between&nbsp;will&nbsp;contain&nbsp;a&nbsp;MIX&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;existing&nbsp;waveform&nbsp;of&nbsp;the&nbsp;segment&nbsp;(decreasing)&nbsp;and&nbsp;that&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;the&nbsp;END&nbsp;segment&nbsp;(increasing).&nbsp;The&nbsp;start&nbsp;segment&nbsp;number&nbsp;can&nbsp;be<span><br>
+<span class="normalText">&nbsp;GREATER&nbsp;than&nbsp;the&nbsp;end&nbsp;segment.&nbsp;Mixing&nbsp;from&nbsp;1-128&nbsp;will&nbsp;take&nbsp;about<span><br>
+<span class="normalText">&nbsp;20&nbsp;seconds.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(fading&nbsp;out&nbsp;).........<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start&nbsp;segment,&nbsp;next&nbsp;seg,&nbsp;next&nbsp;seg,&nbsp;next&nbsp;seg,<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.........(&nbsp;fading&nbsp;in)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;segment<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;ROTATE&nbsp;ENTIRE&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;rotate&nbsp;right&nbsp;1&nbsp;point&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;ROR&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;rotate&nbsp;right&nbsp;(s)&nbsp;segments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;ROR,s&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;rotate&nbsp;right&nbsp;(s)&nbsp;segs&nbsp;&amp;&nbsp;(p)&nbsp;points&nbsp;-&nbsp;ROR,s,p&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;rotate&nbsp;left&nbsp;(just&nbsp;the&nbsp;same,&nbsp;but&nbsp;use:&nbsp;ROL&nbsp;instead&nbsp;of&nbsp;ROR)<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;number,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;&nbsp;=&nbsp;&nbsp;point&nbsp;(byte)&nbsp;number,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;EXAMPLES:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROR,1&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotate&nbsp;right&nbsp;1&nbsp;segment<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROL,8,32&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Rotate&nbsp;left&nbsp;8&nbsp;segments&nbsp;and&nbsp;32&nbsp;points<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROR,0,2&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rotate&nbsp;right&nbsp;2&nbsp;points&nbsp;(zero&nbsp;segments)<span><br>
+<span class="normalText">&nbsp;The&nbsp;entire&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;of&nbsp;the&nbsp;voice&nbsp;will&nbsp;be&nbsp;ROTATED&nbsp;RIGHT<span><br>
+<span class="normalText">&nbsp;or&nbsp;LEFT&nbsp;as&nbsp;desired.&nbsp;Consider&nbsp;the&nbsp;first&nbsp;example&nbsp;above&nbsp;which<span><br>
+<span class="normalText">&nbsp;specifies&nbsp;a&nbsp;ROTATE&nbsp;RIGHT&nbsp;of&nbsp;1&nbsp;segment.&nbsp;This&nbsp;will&nbsp;cause&nbsp;segment<span><br>
+<span class="normalText">&nbsp;1&nbsp;to&nbsp;be&nbsp;moved&nbsp;to&nbsp;segment&nbsp;2,&nbsp;segment&nbsp;2&nbsp;to&nbsp;segment&nbsp;3,&nbsp;and&nbsp;so&nbsp;on.<span><br>
+<span class="normalText">&nbsp;This&nbsp;procedure&nbsp;will&nbsp;"wrap-around"&nbsp;-&nbsp;meaning&nbsp;that&nbsp;segment&nbsp;128<span><br>
+<span class="normalText">&nbsp;will&nbsp;be&nbsp;moved&nbsp;to&nbsp;segment&nbsp;1&nbsp;(hence&nbsp;the&nbsp;name&nbsp;ROTATE).&nbsp;If&nbsp;a&nbsp;ROTATE<span><br>
+<span class="normalText">&nbsp;RIGHT&nbsp;of&nbsp;2&nbsp;points&nbsp;is&nbsp;requested&nbsp;(3rd&nbsp;example),&nbsp;point&nbsp;1&nbsp;will&nbsp;be<span><br>
+<span class="normalText">&nbsp;moved&nbsp;to&nbsp;point&nbsp;3,&nbsp;point&nbsp;2&nbsp;to&nbsp;4,&nbsp;point&nbsp;16,383&nbsp;to&nbsp;point&nbsp;1,&nbsp;and<span><br>
+<span class="normalText">&nbsp;point&nbsp;16,384&nbsp;to&nbsp;point&nbsp;2.&nbsp;(There&nbsp;are&nbsp;16,384&nbsp;points:&nbsp;128&nbsp;segs<span><br>
+<span class="normalText">&nbsp;with&nbsp;128&nbsp;points&nbsp;each.)&nbsp;See&nbsp;<span><span class="reverseText">below.&nbsp;This&nbsp;can&nbsp;be&nbsp;used&nbsp;to<span><br>
+<span class="normalText">&nbsp;trim&nbsp;the&nbsp;start&nbsp;of&nbsp;an&nbsp;externally&nbsp;sampled&nbsp;voice,&nbsp;or&nbsp;(with&nbsp;use&nbsp;of<span><br>
+<span class="normalText">&nbsp;the&nbsp;<span><span class="reverseText">and&nbsp;<span><span class="reverseText">commands)&nbsp;to&nbsp;generate&nbsp;"doubling"&nbsp;or&nbsp;phase<span><br>
+<span class="normalText">&nbsp;cancellation/reinforcment&nbsp;effects.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;REFLECT&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;reflect&nbsp;around&nbsp;segment&nbsp;64&nbsp;point&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;REF&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;reflect&nbsp;around&nbsp;segment&nbsp;(s)&nbsp;point&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;REF,s&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;reflect&nbsp;around&nbsp;segment&nbsp;(s)&nbsp;point&nbsp;(p)&nbsp;&nbsp;&nbsp;-&nbsp;REF,s,p&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;number,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;&nbsp;=&nbsp;&nbsp;point&nbsp;(byte)&nbsp;number,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;&nbsp;EXAMPLES:&nbsp;&nbsp;REF,14&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reflect&nbsp;around&nbsp;seg&nbsp;14&nbsp;point&nbsp;1<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REF,32,64&lt;return&gt;&nbsp;&nbsp;Reflect&nbsp;around&nbsp;seg&nbsp;32&nbsp;point&nbsp;64<span><br>
+<span class="normalText">&nbsp;The&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is&nbsp;symmetrically&nbsp;REFLECTED&nbsp;around&nbsp;the<span><br>
+<span class="normalText">&nbsp;specified&nbsp;point&nbsp;-&nbsp;points&nbsp;preceding&nbsp;the&nbsp;reflection&nbsp;point&nbsp;are<span><br>
+<span class="normalText">&nbsp;repeated&nbsp;after&nbsp;it&nbsp;in&nbsp;&nbsp;reverse&nbsp;&nbsp;order.&nbsp;See&nbsp;table&nbsp;below.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;REVERSE&nbsp;ENTIRE&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;&nbsp;&nbsp;TYPE:&nbsp;REV&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;The&nbsp;entire&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;is&nbsp;completely&nbsp;REVERSED&nbsp;end-for-end.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;This&nbsp;table&nbsp;illustrates&nbsp;the&nbsp;effects&nbsp;of&nbsp;the&nbsp;REVERSE,&nbsp;ROTATE&nbsp;and<span><br>
+<span class="normalText">&nbsp;REFLECT&nbsp;commands&nbsp;by&nbsp;using&nbsp;the&nbsp;alphabet&nbsp;to&nbsp;represent&nbsp;WAVEFORM<span><br>
+<span class="normalText">&nbsp;MEMORY&nbsp;of&nbsp;a&nbsp;voice.&nbsp;Letters&nbsp;represent&nbsp;single&nbsp;waveform&nbsp;POINTS.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;original&nbsp;"waveform":&nbsp;&nbsp;&nbsp;<span><span class="reverseText">A&nbsp;BCDEFGHIJKLMNOPQRSTUVWXYZ<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REVERSED:&nbsp;&nbsp;&nbsp;ZYXWVUTSRQPONMLKJIHGFEDCB<span><span class="reverseText">A&nbsp;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROTATED&nbsp;RIGHT&nbsp;6:&nbsp;&nbsp;&nbsp;UVWXYZ<span><span class="reverseText">A&nbsp;BCDEFGHIJKLMNOPQRST<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROTATED&nbsp;LEFT&nbsp;4:&nbsp;&nbsp;&nbsp;EFGHIJKLMNOPQRSTUVWXYZ<span><span class="reverseText">A&nbsp;BCD<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REFLECTED&nbsp;AROUND&nbsp;&nbsp;G&nbsp;:&nbsp;&nbsp;&nbsp;<span><span class="reverseText">A&nbsp;BCDEF&nbsp;G&nbsp;GFEDCB<span><span class="reverseText">A&nbsp;HIJKLMNOPQRS<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;TRANSFER&nbsp;SEGMENT(S)&nbsp;from&nbsp;another&nbsp;VOICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:<span><br>
+<span class="normalText">&nbsp;transfer&nbsp;current&nbsp;segment&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;T,v&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;transfer&nbsp;segment&nbsp;(s)&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;T,v:s&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;transfer&nbsp;segments&nbsp;(s)&nbsp;to&nbsp;(e)&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;-&nbsp;T,v:s,e&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;transfer&nbsp;ALL&nbsp;segments&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;T,v:*&lt;return&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;&nbsp;v&nbsp;&nbsp;=&nbsp;&nbsp;name&nbsp;&nbsp;or&nbsp;&nbsp;number&nbsp;(1-8)&nbsp;of&nbsp;any&nbsp;loaded&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;EXAMPLES:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;T,FUDGE&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;Transfer&nbsp;current&nbsp;seg&nbsp;from&nbsp;voice&nbsp;FUDGE<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;T,FUDGE:16&lt;return&gt;&nbsp;Transfer&nbsp;segment&nbsp;16&nbsp;from&nbsp;voice&nbsp;FUDGE<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;T,2:16,100&lt;return&gt;&nbsp;Transfer&nbsp;segments&nbsp;16&nbsp;to&nbsp;100&nbsp;from&nbsp;voice&nbsp;2<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;T,4:*&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transfer&nbsp;ALL&nbsp;segments&nbsp;from&nbsp;voice&nbsp;4<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;The&nbsp;selected&nbsp;segment(s)&nbsp;will&nbsp;be&nbsp;TRANSFERRED&nbsp;&nbsp;from&nbsp;&nbsp;the&nbsp;specified<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;voice&nbsp;&nbsp;to&nbsp;&nbsp;the&nbsp;current&nbsp;voice.&nbsp;It&nbsp;is&nbsp;often&nbsp;handy&nbsp;to&nbsp;create&nbsp;a<span><br>
+<span class="normalText">&nbsp;scratch&nbsp;voice&nbsp;for&nbsp;temporary&nbsp;storage&nbsp;of&nbsp;waveform&nbsp;segments&nbsp;while<span><br>
+<span class="normalText">&nbsp;developing&nbsp;sounds&nbsp;on&nbsp;PAGE&nbsp;6.&nbsp;To&nbsp;place&nbsp;segments&nbsp;&nbsp;into&nbsp;&nbsp;the&nbsp;scratc<span><br>
+<span class="normalText">h<span><br>
+<span class="normalText">&nbsp;voice,&nbsp;<span><span class="reverseText">it&nbsp;as&nbsp;the&nbsp;current&nbsp;voice&nbsp;and&nbsp;TRANSFER&nbsp;&nbsp;from&nbsp;<span><br>
+<span class="normalText">&nbsp;the&nbsp;voice&nbsp;you&nbsp;are&nbsp;developing.&nbsp;Remember&nbsp;that&nbsp;the&nbsp;current&nbsp;voice<span><br>
+<span class="normalText">&nbsp;(shown&nbsp;in&nbsp;upper-right)&nbsp;will&nbsp;always&nbsp;be&nbsp;the&nbsp;RECEIVER&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;transferred&nbsp;segments.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;ADD&nbsp;IN&nbsp;SEGMENTS(S)&nbsp;from&nbsp;another&nbsp;VOICE<span><br>
+<span class="normalText">&nbsp;add&nbsp;in&nbsp;current&nbsp;segment&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A,v&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;add&nbsp;in&nbsp;segment&nbsp;(s)&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A,v:s&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;add&nbsp;in&nbsp;segments&nbsp;(s)&nbsp;to&nbsp;(e)&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;-&nbsp;A,v:s,e&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;add&nbsp;in&nbsp;ALL&nbsp;segments&nbsp;from&nbsp;voice&nbsp;(v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A,v:*&lt;return&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;&nbsp;v&nbsp;&nbsp;=&nbsp;&nbsp;name&nbsp;&nbsp;or&nbsp;&nbsp;number&nbsp;(1-8)&nbsp;of&nbsp;any&nbsp;loaded&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;e&nbsp;&nbsp;=&nbsp;&nbsp;segment&nbsp;numbers,&nbsp;range&nbsp;1&nbsp;-&nbsp;128<span><br>
+<span class="normalText">&nbsp;EXAMPLES:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A,FUDGE&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add&nbsp;in&nbsp;current&nbsp;seg&nbsp;from&nbsp;voice&nbsp;FUDGE<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A,FUDGE:16&lt;return&gt;&nbsp;&nbsp;Add&nbsp;in&nbsp;segment&nbsp;16&nbsp;from&nbsp;voice&nbsp;FUDGE<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A,2:16,100&lt;return&gt;&nbsp;&nbsp;Add&nbsp;in&nbsp;segments&nbsp;16&nbsp;to&nbsp;100&nbsp;from&nbsp;voice&nbsp;2<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A,4:*&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add&nbsp;in&nbsp;ALL&nbsp;segments&nbsp;from&nbsp;voice&nbsp;4<span><br>
+<span class="normalText">&nbsp;The&nbsp;ADD&nbsp;command&nbsp;allows&nbsp;segment(s)&nbsp;of&nbsp;two&nbsp;voices&nbsp;to&nbsp;be&nbsp;blended.<span><br>
+<span class="normalText">&nbsp;The&nbsp;WAVEFORM&nbsp;MEMORY&nbsp;of&nbsp;the&nbsp;currently&nbsp;selected&nbsp;voice&nbsp;will&nbsp;be<span><br>
+<span class="normalText">&nbsp;modified&nbsp;to&nbsp;contain&nbsp;an&nbsp;equal&nbsp;mix&nbsp;of&nbsp;the&nbsp;waveforms&nbsp;already&nbsp;in<span><br>
+<span class="normalText">&nbsp;the&nbsp;specified&nbsp;segments&nbsp;and&nbsp;those&nbsp;from&nbsp;the&nbsp;selected&nbsp;voice.<span><br>
+<span class="normalText">&nbsp;An&nbsp;interesting&nbsp;operation&nbsp;involves&nbsp;the&nbsp;combined&nbsp;use&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;<span><span class="reverseText"><span><span class="reverseText">and&nbsp;<span><span class="reverseText">commands&nbsp;to&nbsp;achieve&nbsp;"doubling".<span><br>
+<span class="normalText">&nbsp;Use&nbsp;TRANSFER&nbsp;to&nbsp;move&nbsp;all&nbsp;segments&nbsp;to&nbsp;another&nbsp;(scratch)&nbsp;voice<span><br>
+<span class="normalText">&nbsp;and&nbsp;then&nbsp;ROTATE&nbsp;it&nbsp;RIGHT&nbsp;by&nbsp;some&nbsp;amount&nbsp;(say,&nbsp;48&nbsp;points)&nbsp;thus<span><br>
+<span class="normalText">&nbsp;DELAYING&nbsp;it.&nbsp;Now&nbsp;reselect&nbsp;&nbsp;original&nbsp;&nbsp;voice&nbsp;and&nbsp;ADD&nbsp;all&nbsp;segments<span><br>
+<span class="normalText">&nbsp;back&nbsp;in.&nbsp;Experiment&nbsp;with&nbsp;different&nbsp;rotation&nbsp;(delay)&nbsp;factors.<span><br>
+<span class="normalText">&nbsp;This&nbsp;works&nbsp;best&nbsp;in&nbsp;best&nbsp;in&nbsp;MODE&nbsp;4.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;BLEND&nbsp;a&nbsp;looped&nbsp;voice&nbsp;<span><br>
+<span class="normalText">&nbsp;TYPE:&nbsp;&nbsp;&nbsp;B,&lt;filename&gt;,&lt;segments&gt;&lt;return&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;filename&nbsp;&nbsp;=&nbsp;&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;loaded&nbsp;voice<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;segments&nbsp;&nbsp;=&nbsp;&nbsp;1&nbsp;to&nbsp;128<span><br>
+<span class="normalText">EXAMPLES:<span><br>
+<span class="normalText">&nbsp;B&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blend&nbsp;current&nbsp;voice&nbsp;within&nbsp;default&nbsp;loop<span><br>
+<span class="normalText">&nbsp;B,2&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;voice&nbsp;2=&gt;current&nbsp;voice&nbsp;with&nbsp;default&nbsp;loop<span><br>
+<span class="normalText">&nbsp;B,2,*&lt;return&gt;&nbsp;&nbsp;&nbsp;voice&nbsp;2=&gt;current&nbsp;voice&nbsp;loop&nbsp;over&nbsp;128&nbsp;segs.<span><br>
+<span class="normalText">&nbsp;B,10,20&lt;return&gt;&nbsp;blend&nbsp;current&nbsp;voice,&nbsp;loop&nbsp;over&nbsp;segs.&nbsp;10&nbsp;to&nbsp;20<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">BLEND&nbsp;makes&nbsp;a&nbsp;looped&nbsp;sound&nbsp;smoother&nbsp;by&nbsp;taking&nbsp;the&nbsp;loop&nbsp;length,<span><br>
+<span class="normalText">dividing&nbsp;it&nbsp;into&nbsp;two&nbsp;halves,&nbsp;and&nbsp;fading&nbsp;the&nbsp;first&nbsp;into&nbsp;the<span><br>
+<span class="normalText">second.&nbsp;After&nbsp;BLENDING&nbsp;loop&nbsp;length&nbsp;is&nbsp;one&nbsp;half&nbsp;the&nbsp;original.<span><br>
+<span class="normalText">&lt;filename&gt;&nbsp;is&nbsp;transferred&nbsp;to&nbsp;current&nbsp;voice&nbsp;and&nbsp;blended&nbsp;over<span><br>
+<span class="normalText">specified&nbsp;segments.&nbsp;Current&nbsp;voice&nbsp;is&nbsp;overwritten.<span><br>
+<span class="normalText">If&nbsp;no&nbsp;segments&nbsp;are&nbsp;specified&nbsp;then&nbsp;defaults&nbsp;to&nbsp;current&nbsp;loop<span><br>
+<span class="normalText">position&nbsp;in&nbsp;&lt;filename&gt;.&nbsp;If&nbsp;no&nbsp;current&nbsp;loop&nbsp;in&nbsp;&lt;filename&gt;&nbsp;then<span><br>
+<span class="normalText">default&nbsp;loop&nbsp;is&nbsp;current&nbsp;Page&nbsp;6&nbsp;sement&nbsp;to&nbsp;segment&nbsp;128.<span><br>
+<span class="normalText">If&nbsp;&lt;filename&gt;&nbsp;not&nbsp;specified&nbsp;then&nbsp;current&nbsp;voice&nbsp;is&nbsp;blended.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">Also&nbsp;available&nbsp;is&nbsp;the&nbsp;;L&nbsp;option,&nbsp;which&nbsp;causes&nbsp;the&nbsp;BLEND&nbsp;to&nbsp;use<span><br>
+<span class="normalText">a&nbsp;linear&nbsp;ramping&nbsp;function&nbsp;instead&nbsp;of&nbsp;the&nbsp;default&nbsp;square&nbsp;root<span><br>
+<span class="normalText">ramping&nbsp;function.&nbsp;This&nbsp;may&nbsp;be&nbsp;useful&nbsp;for&nbsp;regular&nbsp;repetitive<span><br>
+<span class="normalText">waveforms&nbsp;such&nbsp;as&nbsp;Page&nbsp;4&nbsp;and&nbsp;5&nbsp;generated&nbsp;sounds.<span><br>
+<span class="normalText">&nbsp;&nbsp;TO&nbsp;JUSTIFY&nbsp;a&nbsp;VOICE&nbsp;waveform&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;JU,s,a,p&lt;return&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;&nbsp;s&nbsp;=&nbsp;start&nbsp;point&nbsp;as&nbsp;&lt;segment'point&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;=&nbsp;alignment&nbsp;point&nbsp;as&nbsp;&lt;segment'point&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;be&nbsp;equal&nbsp;to&nbsp;or&nbsp;greater&nbsp;than&nbsp;start<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;=&nbsp;period&nbsp;1&nbsp;to&nbsp;16383<span><br>
+<span class="normalText">EXAMPLE<span><br>
+<span class="normalText">JU,1'31,1'31,126&lt;return&gt;&nbsp;-&nbsp;Justify&nbsp;from&nbsp;seg&nbsp;1&nbsp;point&nbsp;31&nbsp;aligning<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(into&nbsp;tune)&nbsp;from&nbsp;seg&nbsp;1&nbsp;point&nbsp;31.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make&nbsp;126&nbsp;points&nbsp;of&nbsp;waveform&nbsp;fit&nbsp;into<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;segment.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;JUSTIFY&nbsp;will&nbsp;shrink&nbsp;or&nbsp;stretch&nbsp;waveforms&nbsp;to&nbsp;fit&nbsp;segment&nbsp;bound-<span><br>
+<span class="normalText">&nbsp;aries.&nbsp;Waveforms&nbsp;can&nbsp;be&nbsp;pulled&nbsp;into&nbsp;tune,&nbsp;making&nbsp;it&nbsp;easier&nbsp;to<span><br>
+<span class="normalText">&nbsp;<span><span class="reverseText">or&nbsp;<span><span class="reverseText">the&nbsp;waveform.&nbsp;JUSTIFY&nbsp;always&nbsp;looks&nbsp;for<span><br>
+<span class="normalText">&nbsp;waveform&nbsp;starting&nbsp;from&nbsp;zero&nbsp;with&nbsp;a&nbsp;positive&nbsp;rising&nbsp;edge.<span><br>
+<span class="normalText">&nbsp;Start&nbsp;point&nbsp;should&nbsp;have&nbsp;a&nbsp;LEVEL&nbsp;of&nbsp;zero&nbsp;and&nbsp;positive&nbsp;going.<span><br>
+<span class="normalText">&nbsp;Alignment&nbsp;point&nbsp;is&nbsp;where&nbsp;waveform&nbsp;justification&nbsp;begins.<span><br>
+<span class="normalText">&nbsp;Period&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;points&nbsp;of&nbsp;pre-justified&nbsp;waveform&nbsp;from<span><br>
+<span class="normalText">&nbsp;one&nbsp;zero&nbsp;rising&nbsp;edge&nbsp;to&nbsp;the&nbsp;next&nbsp;that&nbsp;will&nbsp;be&nbsp;squeezed&nbsp;or<span><br>
+<span class="normalText">&nbsp;stretched&nbsp;into&nbsp;1&nbsp;segment.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;SELECT&nbsp;any&nbsp;loaded&nbsp;VOICE&nbsp;&nbsp;see&nbsp;PAGE&nbsp;4,&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">TO&nbsp;LOAD/SAVE&nbsp;VOICES&nbsp;or&nbsp;INSTRUMENTS&nbsp;&nbsp;see&nbsp;PAGE&nbsp;1,&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+
+  </body>
+</html>

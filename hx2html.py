@@ -43,6 +43,7 @@ HTML_LEFT_ANGLE_BRACKET = '&lt;'
 HTML_RIGHT_ANGLE_BRACKET = '&gt;'
 
 HTML_NORMAL_TEXT = '<span class="normalText">'
+HTML_REVERSE_TEXT = '<span class="reverseText">'
 HTML_TEXT_END_OF_LINE = '<span><br>'
 
 # HX definitions
@@ -61,7 +62,34 @@ def add_to_html_line(html_line, s):
 
 def write_html(f, s):
     f.write(s)
-    print(s)
+    #print(s)
+
+def process_escape(html_line, escape):
+
+    if escape[:2].upper() == 'TL':
+        html_line = add_to_html_line(html_line, '<span>')    
+        html_line = add_to_html_line(html_line, '<br><br>')
+
+    elif escape[:2].upper() == 'BI':
+        html_line = add_to_html_line(html_line, '<span>')    
+        html_line = add_to_html_line(html_line, HTML_REVERSE_TEXT)
+
+    elif escape[:2].upper() == 'NS':
+        html_line = add_to_html_line(html_line, '<span>')    
+        html_line = add_to_html_line(html_line, '<br><br><br><br>')
+
+    elif escape[:2].upper() == 'LS':
+        html_line = add_to_html_line(html_line, '<span>')    
+        html_line = add_to_html_line(html_line, '<br>')
+
+    elif escape[:2].upper() == 'LM':
+        # TODO
+        pass
+
+    else:
+        print(f'****** unknown tag: {escape}')
+
+    return html_line
 
 def convert(source_file, destination_file):
 
@@ -91,19 +119,26 @@ def convert(source_file, destination_file):
                         escape = ''
 
                     else:
-                        # This is a real &
-                        html_line = add_to_html_line(html_line, HTML_AMP)
-                        line_pos = line_pos + 1
-                        inEscape = False
+                        if len(escape) != 0:
+                            # Start of new escape
+                            html_line = process_escape(html_line, escape)
+                            inEscape = True
+                            escape = ''
+
+                        else:
+                            # This is a real &
+                            html_line = add_to_html_line(html_line, HTML_AMP)
+                            line_pos = line_pos + 1
+                            inEscape = False
 
                 elif c == ' ':
 
                     if inEscape:
 
                         # End of escape sequence
-                        # TODO: parse escape
-
+                        html_line = process_escape(html_line, escape)
                         inEscape = False
+                        escape = ''
                     
                     else:
                         html_line = add_to_html_line(html_line, HTML_SPACE)
@@ -135,7 +170,7 @@ def convert(source_file, destination_file):
 
                 # Check for end of line
 
-                if line_pos >= HX_WIDTH:
+                if line_pos > HX_WIDTH:
                     html_line = add_to_html_line(html_line, HTML_TEXT_END_OF_LINE + '\n')
                     write_html(f_destination, html_line)
                     html_line = ''
@@ -146,9 +181,7 @@ def convert(source_file, destination_file):
                 html_line = add_to_html_line(html_line, HTML_TEXT_END_OF_LINE + '\n')
                 write_html(f_destination, html_line)            
 
-        f_destination.write(HTML_POST)
-        print(f'{HTML_POST}')
-
+        write_html(f_destination, HTML_POST)
 
 #--------------------------------------------------------------------
 # Main
@@ -160,10 +193,8 @@ def main():
     #    print(f'Usage: hx2html.py <hx input file> <html output file>')
     #    exit()
 
-    #hx_filename = sys.argv[1]
-    #html_filename = sys.argv[2]
-    hx_filename = '.\hx\PAGE1.HX'
-    html_filename = 'page1.htm'
+    hx_filename = sys.argv[1]
+    html_filename = sys.argv[2]
     convert(hx_filename, html_filename)
 
 if __name__ == '__main__':
