@@ -1,0 +1,148 @@
+
+<html>
+  <head>
+    <style>
+      .normalText
+      {
+        color:green;
+	    background-color:black;
+      }
+      .reverseText
+      {
+        color:black;
+	    background-color:green;
+      }
+    </style>
+  </head>
+  <body style="background-color:black;font-family:'Courier New'">
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sheet:&nbsp;&nbsp;2.&nbsp;&nbsp;<span><span class="reverseText">USER-DEFINED&nbsp;FUNCTIONS<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;&nbsp;<span><span class="reverseText">PRESET&nbsp;FUNCTIONS<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;&nbsp;<span><span class="reverseText">SELECT&nbsp;a&nbsp;FUNCTION&nbsp;for&nbsp;DRAWING<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;&nbsp;<span><span class="reverseText">DRAW&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;&nbsp;<span><span class="reverseText">STORE&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;<span><span class="reverseText">ZERO&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;<span><span class="reverseText">INVERT&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;&nbsp;<span><span class="reverseText">UNLOCK&nbsp;command<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;&nbsp;<span><span class="reverseText">LOAD/SAVE&nbsp;FUNCTIONS<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.&nbsp;&nbsp;<span><span class="reverseText">LOAD/SAVE&nbsp;VOICES<span><br>
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>For&nbsp;HELP&nbsp;&nbsp;touch&nbsp;any&nbsp;BOX&nbsp;with&nbsp;LIGHTPEN&nbsp;or&nbsp;type:&nbsp;n&lt;set&gt;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where:&nbsp;n&nbsp;&nbsp;=&nbsp;&nbsp;sheet&nbsp;no.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText"><span><br>For&nbsp;HELP&nbsp;with&nbsp;HELP&nbsp;PAGES&nbsp;,&nbsp;touch&nbsp;<span><span class="reverseText">or&nbsp;type:&nbsp;H1&lt;return&gt;<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;<span><br>
+<span class="normalText">&nbsp;USER&nbsp;DEFINED&nbsp;FUNCTIONS&nbsp;&nbsp;are&nbsp;curves&nbsp;drawn&nbsp;on&nbsp;PAGE&nbsp;F&nbsp;and&nbsp;used&nbsp;on<span><br>
+<span class="normalText">&nbsp;PAGE&nbsp;7&nbsp;letting&nbsp;you&nbsp;shape&nbsp;response&nbsp;curves&nbsp;for&nbsp;<span><span class="reverseText"><span><br>
+<span class="normalText"><span><span class="reverseText"><span><span class="reverseText">faders,&nbsp;and&nbsp;<span><span class="reverseText">Some&nbsp;examples:&nbsp;a&nbsp;control&nbsp;fader<span><br>
+<span class="normalText">&nbsp;could&nbsp;be&nbsp;given&nbsp;an&nbsp;exponential&nbsp;response,&nbsp;rather&nbsp;than&nbsp;linear;&nbsp;by<span><br>
+<span class="normalText">&nbsp;doing&nbsp;a&nbsp;multi-voice&nbsp;load&nbsp;on&nbsp;Page&nbsp;2,&nbsp;cross-fades&nbsp;between&nbsp;voices<span><br>
+<span class="normalText">&nbsp;can&nbsp;be&nbsp;performed&nbsp;by&nbsp;KEYNUM&nbsp;or&nbsp;keyboard&nbsp;control&nbsp;faders;&nbsp;touch<span><br>
+<span class="normalText">&nbsp;sensitivity&nbsp;of&nbsp;music&nbsp;keyboard&nbsp;can&nbsp;be&nbsp;varied.<span><br>
+<span class="normalText">&nbsp;Sixteen&nbsp;functions&nbsp;letters,&nbsp;A&nbsp;to&nbsp;P,&nbsp;are&nbsp;presented&nbsp;on&nbsp;the&nbsp;bottom&nbsp;&nbsp;<span><br>
+<span class="normalText">of&nbsp;the&nbsp;screen.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;For&nbsp;a&nbsp;drawn&nbsp;function&nbsp;to&nbsp;have&nbsp;an&nbsp;effect,&nbsp;it&nbsp;must&nbsp;be&nbsp;patched&nbsp;to<span><br>
+<span class="normalText">&nbsp;desired&nbsp;control&nbsp;parameter&nbsp;on&nbsp;Page&nbsp;7.&nbsp;A&nbsp;function&nbsp;can&nbsp;be&nbsp;drawn<span><br>
+<span class="normalText">&nbsp;on&nbsp;the&nbsp;screen&nbsp;with&nbsp;lightpen,&nbsp;similar&nbsp;to&nbsp;<span><span class="reverseText">DRAWING&nbsp;on<span><br>
+<span class="normalText">&nbsp;PAGE&nbsp;6.&nbsp;For&nbsp;detailed&nbsp;work,&nbsp;the&nbsp;alphanumeric&nbsp;keyboard&nbsp;can&nbsp;be<span><br>
+<span class="normalText">&nbsp;used.&nbsp;All&nbsp;this&nbsp;works&nbsp;in&nbsp;real&nbsp;time,&nbsp;so&nbsp;that&nbsp;if&nbsp;a&nbsp;function&nbsp;is<span><br>
+<span class="normalText">&nbsp;included&nbsp;in&nbsp;a&nbsp;PAGE&nbsp;7&nbsp;patch,&nbsp;and&nbsp;is&nbsp;being&nbsp;drawn,&nbsp;you&nbsp;can&nbsp;hear<span><br>
+<span class="normalText">&nbsp;the&nbsp;results&nbsp;immediately.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;&nbsp;PRESET&nbsp;FUNCTIONS&nbsp;<span><br>
+<span class="normalText">&nbsp;Three&nbsp;preset&nbsp;functions&nbsp;are&nbsp;loaded&nbsp;into&nbsp;function&nbsp;slots&nbsp;A,&nbsp;B&nbsp;and<span><br>
+<span class="normalText">&nbsp;C&nbsp;at&nbsp;CMI&nbsp;start-up&nbsp;time.&nbsp;Function&nbsp;A&nbsp;is&nbsp;the&nbsp;default&nbsp;setting<span><br>
+<span class="normalText">&nbsp;(x=y)&nbsp;and&nbsp;is&nbsp;not&nbsp;able&nbsp;to&nbsp;be&nbsp;re-drawn.&nbsp;Functions&nbsp;B&nbsp;and&nbsp;C&nbsp;are<span><br>
+<span class="normalText">&nbsp;specific&nbsp;to&nbsp;<span><span class="reverseText">LEVEL&nbsp;on&nbsp;Page&nbsp;7&nbsp;and&nbsp;are&nbsp;such&nbsp;that&nbsp;a&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">FADER&nbsp;or&nbsp;<span><span class="reverseText">can&nbsp;be&nbsp;used&nbsp;to&nbsp;pan&nbsp;smoothly&nbsp;between&nbsp;two&nbsp;voices<span><br>
+<span class="normalText">&nbsp;loaded&nbsp;in&nbsp;a&nbsp;<span><span class="reverseText">register.&nbsp;To&nbsp;do&nbsp;this,&nbsp;load&nbsp;a&nbsp;register<span><br>
+<span class="normalText">&nbsp;with&nbsp;two&nbsp;voices&nbsp;on&nbsp;Page&nbsp;2,&nbsp;go&nbsp;to&nbsp;PAGE&nbsp;7&nbsp;and&nbsp;patch&nbsp;AUX.&nbsp;LEVEL<span><br>
+<span class="normalText">&nbsp;on&nbsp;one&nbsp;voice&nbsp;to&nbsp;KEYNUM,C&nbsp;or&nbsp;a&nbsp;control&nbsp;with&nbsp;function&nbsp;B.&nbsp;On&nbsp;the<span><br>
+<span class="normalText">&nbsp;second&nbsp;voice,&nbsp;patch&nbsp;AUX.&nbsp;LEVEL&nbsp;to&nbsp;KEYNUM,C&nbsp;or&nbsp;a&nbsp;control&nbsp;with<span><br>
+<span class="normalText">&nbsp;function&nbsp;C.&nbsp;This&nbsp;can&nbsp;improve&nbsp;realism&nbsp;with&nbsp;MODE&nbsp;4&nbsp;sounds,&nbsp;as<span><br>
+<span class="normalText">&nbsp;well&nbsp;as&nbsp;allowing&nbsp;you&nbsp;to&nbsp;create&nbsp;some&nbsp;very&nbsp;interesting&nbsp;effects.<span><br>
+<span class="normalText">&nbsp;Unlike&nbsp;function&nbsp;"A",&nbsp;functions&nbsp;"B"&nbsp;and&nbsp;"C"&nbsp;can&nbsp;be&nbsp;re-drawn&nbsp;but<span><br>
+<span class="normalText">&nbsp;once&nbsp;re-drawn,&nbsp;the&nbsp;original&nbsp;'system&nbsp;defined'&nbsp;functions&nbsp;will&nbsp;be<span><br>
+<span class="normalText">&nbsp;lost&nbsp;until&nbsp;the&nbsp;CMI&nbsp;is&nbsp;next&nbsp;re-booted.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;TO&nbsp;SELECT&nbsp;a&nbsp;FUNCTION&nbsp;for&nbsp;DRAWING&nbsp;&nbsp;point&nbsp;LIGHTPEN&nbsp;at&nbsp;a&nbsp;function<span><br>
+<span class="normalText">&nbsp;letter.&nbsp;Then&nbsp;DRAW&nbsp;desired&nbsp;function&nbsp;curve.&nbsp;Alternatively,&nbsp;the<span><br>
+<span class="normalText">&nbsp;cursor&nbsp;control&nbsp;keys&nbsp;and&nbsp;POINT/LEVEL&nbsp;assignment&nbsp;may&nbsp;be&nbsp;used&nbsp;for<span><br>
+<span class="normalText">&nbsp;fine&nbsp;detail.&nbsp;When&nbsp;drawing&nbsp;is&nbsp;complete,&nbsp;point&nbsp;lightpen&nbsp;at&nbsp;STORE<span><br>
+<span class="normalText">&nbsp;or&nbsp;type&nbsp;ST,function&nbsp;letter&lt;return&gt;.&nbsp;A&nbsp;bar&nbsp;will&nbsp;appear&nbsp;above<span><br>
+<span class="normalText">&nbsp;stored&nbsp;function&nbsp;signifying&nbsp;that&nbsp;the&nbsp;function&nbsp;is&nbsp;"locked".&nbsp;To<span><br>
+<span class="normalText">&nbsp;perform&nbsp;further&nbsp;modification,&nbsp;the&nbsp;function&nbsp;must&nbsp;be&nbsp;UNLOCKED.<span><br>
+<span class="normalText">&nbsp;See&nbsp;<span><span class="reverseText">description.<span><br>
+<span class="normalText">&nbsp;<span><br>
+<span class="normalText">&nbsp;DRAW&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D,x&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;x<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;DRAW<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;x&nbsp;=&nbsp;function&nbsp;letter&nbsp;A&nbsp;to&nbsp;P<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">This&nbsp;command&nbsp;displays&nbsp;current&nbsp;contents&nbsp;of&nbsp;selected&nbsp;function.&nbsp;By&nbsp;u<span><br>
+<span class="normalText">sing&nbsp;DRAW,&nbsp;then&nbsp;selecting&nbsp;another&nbsp;function&nbsp;letter&nbsp;and&nbsp;STORING,&nbsp;cu<span><br>
+<span class="normalText">rves&nbsp;may&nbsp;transferred&nbsp;between&nbsp;functions.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;STORE&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ST,x&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;x<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;STORE<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;x&nbsp;=&nbsp;function&nbsp;letter&nbsp;B&nbsp;to&nbsp;P<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;Currently&nbsp;displayed&nbsp;curve&nbsp;is&nbsp;stored&nbsp;in&nbsp;function&nbsp;slot&nbsp;and&nbsp;a&nbsp;bar<span><br>
+<span class="normalText">&nbsp;appears&nbsp;above&nbsp;function&nbsp;letter.&nbsp;This&nbsp;signifies&nbsp;overwrite<span><br>
+<span class="normalText">&nbsp;protection.&nbsp;Opposite&nbsp;of&nbsp;UNLOCK.&nbsp;If&nbsp;functions&nbsp;are&nbsp;loaded&nbsp;from<span><br>
+<span class="normalText">&nbsp;disk&nbsp;via&nbsp;<span><span class="reverseText">files&nbsp;(.CO),&nbsp;they&nbsp;are&nbsp;automatically&nbsp;assigned<span><br>
+<span class="normalText">&nbsp;over-write&nbsp;protection.<span><br>
+<span class="normalText">&nbsp;NOTE:&nbsp;Function&nbsp;A&nbsp;is&nbsp;a&nbsp;system&nbsp;preset&nbsp;and&nbsp;permanently&nbsp;protected.<span><br>
+<span class="normalText">&nbsp;<span><br>
+<span class="normalText">&nbsp;ZERO&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;ZERO<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;Currently&nbsp;displayed&nbsp;curve&nbsp;is&nbsp;zeroed.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;INVERT&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;INVERT<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;Currently&nbsp;displayed&nbsp;curve&nbsp;is&nbsp;inverted&nbsp;horizontally.&nbsp;This&nbsp;is<span><br>
+<span class="normalText">&nbsp;useful,&nbsp;for&nbsp;example,&nbsp;when&nbsp;panning&nbsp;between&nbsp;two&nbsp;voices&nbsp;loaded&nbsp;in<span><br>
+<span class="normalText">&nbsp;one&nbsp;register&nbsp;using&nbsp;one&nbsp;control&nbsp;fader.<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;UNLOCK&nbsp;command&nbsp;&nbsp;&nbsp;&nbsp;TYPE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIGHTPEN:<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UN,x&lt;return&gt;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;x<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt;UNLOCK<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where&nbsp;x&nbsp;=&nbsp;function&nbsp;letter&nbsp;B&nbsp;to&nbsp;P<span><br>
+<span class="normalText"><span><br>
+<span class="normalText">&nbsp;Opposite&nbsp;of&nbsp;STORE.&nbsp;Function&nbsp;loses&nbsp;over-write&nbsp;protection&nbsp;and<span><br>
+<span class="normalText">&nbsp;may&nbsp;be&nbsp;re-drawn.&nbsp;Bar&nbsp;disappears&nbsp;above&nbsp;function&nbsp;letter.<span><br>
+<span class="normalText">&nbsp;NOTE:&nbsp;Function&nbsp;A&nbsp;is&nbsp;a&nbsp;system&nbsp;preset&nbsp;and&nbsp;cannot&nbsp;be&nbsp;UNLOCKED.<span><br>
+<span class="normalText">&nbsp;<span><br>
+<span class="normalText">&nbsp;LOAD/SAVE&nbsp;FUNCTIONS&nbsp;<span><br>
+<span class="normalText">&nbsp;PAGE&nbsp;F&nbsp;function&nbsp;curves&nbsp;are&nbsp;stored&nbsp;as&nbsp;part&nbsp;of&nbsp;PAGE&nbsp;7&nbsp;CONTROL&nbsp;<span><br>
+<span class="normalText">&nbsp;to&nbsp;which&nbsp;they&nbsp;relate.&nbsp;If&nbsp;a&nbsp;control&nbsp;file&nbsp;contains&nbsp;several<span><br>
+<span class="normalText">&nbsp;patches&nbsp;making&nbsp;use&nbsp;of&nbsp;functions,&nbsp;then&nbsp;saving&nbsp;that&nbsp;control&nbsp;file<span><br>
+<span class="normalText">&nbsp;to&nbsp;disk&nbsp;will&nbsp;also&nbsp;save&nbsp;the&nbsp;appropriate&nbsp;functions&nbsp;as&nbsp;part&nbsp;of<span><br>
+<span class="normalText">&nbsp;that&nbsp;control&nbsp;file.&nbsp;Loading&nbsp;that&nbsp;control&nbsp;file&nbsp;will&nbsp;then&nbsp;restore<span><br>
+<span class="normalText">&nbsp;those&nbsp;functions&nbsp;to&nbsp;their&nbsp;appropriate&nbsp;slots&nbsp;in&nbsp;memory.&nbsp;Function<span><br>
+<span class="normalText">&nbsp;data&nbsp;already&nbsp;in&nbsp;those&nbsp;slots&nbsp;will&nbsp;be&nbsp;overwritten.&nbsp;If&nbsp;it&nbsp;is<span><br>
+<span class="normalText">&nbsp;desired&nbsp;to&nbsp;preserve&nbsp;functions&nbsp;already&nbsp;loaded&nbsp;into&nbsp;memory,&nbsp;but<span><br>
+<span class="normalText">&nbsp;the&nbsp;slots&nbsp;occupied&nbsp;clash&nbsp;with&nbsp;the&nbsp;function&nbsp;letters&nbsp;specified<span><br>
+<span class="normalText">&nbsp;in&nbsp;the&nbsp;control&nbsp;file&nbsp;to&nbsp;be&nbsp;loaded,&nbsp;then&nbsp;a&nbsp;new&nbsp;load&nbsp;command<span><br>
+<span class="normalText">&nbsp;option&nbsp;may&nbsp;be&nbsp;used.&nbsp;The&nbsp;"S"&nbsp;for&nbsp;SHUFFLE&nbsp;option&nbsp;causes&nbsp;the<span><br>
+<span class="normalText">&nbsp;function&nbsp;tables&nbsp;contained&nbsp;in&nbsp;the&nbsp;control&nbsp;file&nbsp;being&nbsp;loaded&nbsp;to<span><br>
+<span class="normalText">&nbsp;be&nbsp;assigned&nbsp;to&nbsp;the&nbsp;first&nbsp;free&nbsp;slots&nbsp;in&nbsp;memory,&nbsp;regardless&nbsp;of<span><br>
+<span class="normalText">&nbsp;their&nbsp;function&nbsp;letters.&nbsp;The&nbsp;CMI&nbsp;then&nbsp;adjusts&nbsp;any&nbsp;function<span><br>
+<span class="normalText">&nbsp;letters&nbsp;specified&nbsp;in&nbsp;patches&nbsp;to&nbsp;match&nbsp;the&nbsp;position&nbsp;of&nbsp;the<span><br>
+<span class="normalText">&nbsp;actual&nbsp;function&nbsp;within&nbsp;memory.&nbsp;To&nbsp;save&nbsp;the&nbsp;adjusted&nbsp;patches&nbsp;to<span><br>
+<span class="normalText">&nbsp;disk,&nbsp;save&nbsp;the&nbsp;control&nbsp;file&nbsp;in&nbsp;the&nbsp;normal&nbsp;way.&nbsp;A&nbsp;maximum&nbsp;of&nbsp;10<span><br>
+<span class="normalText">&nbsp;function&nbsp;tables&nbsp;can&nbsp;be&nbsp;stored&nbsp;in&nbsp;a&nbsp;control&nbsp;file.<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+<span class="normalText">&nbsp;TO&nbsp;SELECT&nbsp;any&nbsp;loaded&nbsp;VOICE&nbsp;&nbsp;see&nbsp;PAGE&nbsp;4,&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">TO&nbsp;LOAD/SAVE&nbsp;VOICES&nbsp;or&nbsp;INSTRUMENTS&nbsp;&nbsp;see&nbsp;PAGE&nbsp;1,&nbsp;<span><br>
+<span class="normalText"><span><span class="reverseText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+<span class="normalText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br>
+
+  </body>
+</html>
